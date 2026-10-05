@@ -1,0 +1,4032 @@
+[
+  {
+    "id": "406",
+    "displayId": "AURA_WHEEL_ELECTRIC",
+    "type": "ELECTRIC",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "407",
+    "displayId": "AURA_WHEEL_DARK",
+    "type": "DARK",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "482",
+    "displayId": "DYNAMAX_CANNON",
+    "type": "DRAGON",
+    "power": 215,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "495",
+    "displayId": "495",
+    "type": "FIGHTING",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "496",
+    "displayId": "496",
+    "type": "PSYCHIC",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "497",
+    "displayId": "PLASMA_FISTS",
+    "type": "ELECTRIC",
+    "power": 135,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2500,
+    "damageWindowEndMs": 3000
+  },
+  {
+    "id": "504",
+    "displayId": "504",
+    "type": "ELECTRIC",
+    "power": 170,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2600
+  },
+  {
+    "id": "505",
+    "displayId": "505",
+    "type": "ELECTRIC",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2800,
+    "damageWindowEndMs": 3300
+  },
+  {
+    "id": "508",
+    "displayId": "508",
+    "type": "POISON",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "512",
+    "displayId": "512",
+    "type": "WATER",
+    "power": 180,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "515",
+    "displayId": "515",
+    "type": "DRAGON",
+    "power": 185,
+    "energyDelta": -100,
+    "durationMs": 4000,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 3800
+  },
+  {
+    "id": "522",
+    "displayId": "522",
+    "type": "FLYING",
+    "power": 170,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "566",
+    "displayId": "566",
+    "type": "GRASS",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "567",
+    "displayId": "567",
+    "type": "FIRE",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "568",
+    "displayId": "568",
+    "type": "WATER",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "572",
+    "displayId": "572",
+    "type": "PSYCHIC",
+    "power": 170,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "583",
+    "displayId": "583",
+    "type": "FIGHTING",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 700,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "590",
+    "displayId": "GLAIVE_RUSH",
+    "type": "DRAGON",
+    "power": 105,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "592",
+    "displayId": "SNIPE_SHOT",
+    "type": "WATER",
+    "power": 100,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2900
+  },
+  {
+    "id": "593",
+    "displayId": "DIVE",
+    "type": "WATER",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 3300,
+    "damageWindowStartMs": null,
+    "damageWindowEndMs": null
+  },
+  {
+    "id": "594",
+    "displayId": "GULP_MISSILE_GULPING",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": null,
+    "damageWindowEndMs": null
+  },
+  {
+    "id": "595",
+    "displayId": "GULP_MISSILE_GORGING",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": null,
+    "damageWindowEndMs": null
+  },
+  {
+    "id": "ACID_FAST",
+    "displayId": "ACID_FAST",
+    "type": "POISON",
+    "power": 11,
+    "energyDelta": 10,
+    "durationMs": 1000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "ACID_SPRAY",
+    "displayId": "ACID_SPRAY",
+    "type": "POISON",
+    "power": 20,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "ACROBATICS",
+    "displayId": "ACROBATICS",
+    "type": "FLYING",
+    "power": 100,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "AERIAL_ACE",
+    "displayId": "AERIAL_ACE",
+    "type": "FLYING",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "AEROBLAST",
+    "displayId": "AEROBLAST",
+    "type": "FLYING",
+    "power": 180,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3300,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "AEROBLAST_PLUS",
+    "displayId": "AEROBLAST_PLUS",
+    "type": "FLYING",
+    "power": 200,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3300,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "AEROBLAST_PLUS_PLUS",
+    "displayId": "AEROBLAST_PLUS_PLUS",
+    "type": "FLYING",
+    "power": 225,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3300,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "AIR_CUTTER",
+    "displayId": "AIR_CUTTER",
+    "type": "FLYING",
+    "power": 55,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "AIR_SLASH_FAST",
+    "displayId": "AIR_SLASH_FAST",
+    "type": "FLYING",
+    "power": 12,
+    "energyDelta": 8,
+    "durationMs": 1000,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "ANCIENT_POWER",
+    "displayId": "ANCIENT_POWER",
+    "type": "ROCK",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2850,
+    "damageWindowEndMs": 3100
+  },
+  {
+    "id": "AQUA_JET",
+    "displayId": "AQUA_JET",
+    "type": "WATER",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "AQUA_STEP",
+    "displayId": "AQUA_STEP",
+    "type": "WATER",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2050,
+    "damageWindowEndMs": 3100
+  },
+  {
+    "id": "AQUA_TAIL",
+    "displayId": "AQUA_TAIL",
+    "type": "WATER",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1750
+  },
+  {
+    "id": "ASTONISH_FAST",
+    "displayId": "ASTONISH_FAST",
+    "type": "GHOST",
+    "power": 7,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "AURA_SPHERE",
+    "displayId": "AURA_SPHERE",
+    "type": "FIGHTING",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "AURORA_BEAM",
+    "displayId": "AURORA_BEAM",
+    "type": "ICE",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3300,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "AVALANCHE",
+    "displayId": "AVALANCHE",
+    "type": "ICE",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "BEAK_BLAST",
+    "displayId": "BEAK_BLAST",
+    "type": "FLYING",
+    "power": 125,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "BEHEMOTH_BASH",
+    "displayId": "BEHEMOTH_BASH",
+    "type": "STEEL",
+    "power": 125,
+    "energyDelta": -50,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "BEHEMOTH_BLADE",
+    "displayId": "BEHEMOTH_BLADE",
+    "type": "STEEL",
+    "power": 200,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2500,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "BITE_FAST",
+    "displayId": "BITE_FAST",
+    "type": "DARK",
+    "power": 6,
+    "energyDelta": 4,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "BLAST_BURN",
+    "displayId": "BLAST_BURN",
+    "type": "FIRE",
+    "power": 120,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2950,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "BLAZE_KICK",
+    "displayId": "BLAZE_KICK",
+    "type": "FIRE",
+    "power": 40,
+    "energyDelta": -33,
+    "durationMs": 1000,
+    "damageWindowStartMs": 250,
+    "damageWindowEndMs": 600
+  },
+  {
+    "id": "BLEAKWIND_STORM",
+    "displayId": "BLEAKWIND_STORM",
+    "type": "FLYING",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "BLIZZARD",
+    "displayId": "BLIZZARD",
+    "type": "ICE",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "BODY_SLAM",
+    "displayId": "BODY_SLAM",
+    "type": "NORMAL",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "BONE_CLUB",
+    "displayId": "BONE_CLUB",
+    "type": "GROUND",
+    "power": 40,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "BOOMBURST",
+    "displayId": "BOOMBURST",
+    "type": "NORMAL",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "BRAVE_BIRD",
+    "displayId": "BRAVE_BIRD",
+    "type": "FLYING",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "BREAKING_SWIPE",
+    "displayId": "BREAKING_SWIPE",
+    "type": "DRAGON",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 1000,
+    "damageWindowStartMs": 470,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "BRICK_BREAK",
+    "displayId": "BRICK_BREAK",
+    "type": "FIGHTING",
+    "power": 40,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 700,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "BRINE",
+    "displayId": "BRINE",
+    "type": "WATER",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "BRUTAL_SWING",
+    "displayId": "BRUTAL_SWING",
+    "type": "DARK",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "BUBBLE_BEAM",
+    "displayId": "BUBBLE_BEAM",
+    "type": "WATER",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1550,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "BUBBLE_FAST",
+    "displayId": "BUBBLE_FAST",
+    "type": "WATER",
+    "power": 10,
+    "energyDelta": 12,
+    "durationMs": 1000,
+    "damageWindowStartMs": 550,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "BUG_BITE_FAST",
+    "displayId": "BUG_BITE_FAST",
+    "type": "BUG",
+    "power": 5,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 250,
+    "damageWindowEndMs": 450
+  },
+  {
+    "id": "BUG_BUZZ",
+    "displayId": "BUG_BUZZ",
+    "type": "BUG",
+    "power": 95,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2900
+  },
+  {
+    "id": "BULLDOZE",
+    "displayId": "BULLDOZE",
+    "type": "GROUND",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 3100
+  },
+  {
+    "id": "BULLET_PUNCH_FAST",
+    "displayId": "BULLET_PUNCH_FAST",
+    "type": "STEEL",
+    "power": 10,
+    "energyDelta": 11,
+    "durationMs": 1000,
+    "damageWindowStartMs": 400,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "BULLET_SEED_FAST",
+    "displayId": "BULLET_SEED_FAST",
+    "type": "GRASS",
+    "power": 7,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "CHARGE_BEAM_FAST",
+    "displayId": "CHARGE_BEAM_FAST",
+    "type": "ELECTRIC",
+    "power": 7,
+    "energyDelta": 14,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "CHARM_FAST",
+    "displayId": "CHARM_FAST",
+    "type": "FAIRY",
+    "power": 20,
+    "energyDelta": 11,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1200
+  },
+  {
+    "id": "CHILLING_WATER",
+    "displayId": "CHILLING_WATER",
+    "type": "WATER",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2050,
+    "damageWindowEndMs": 3100
+  },
+  {
+    "id": "CLANGING_SCALES",
+    "displayId": "CLANGING_SCALES",
+    "type": "DRAGON",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1880,
+    "damageWindowEndMs": 3200
+  },
+  {
+    "id": "CLOSE_COMBAT",
+    "displayId": "CLOSE_COMBAT",
+    "type": "FIGHTING",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "CONFUSION_FAST",
+    "displayId": "CONFUSION_FAST",
+    "type": "PSYCHIC",
+    "power": 19,
+    "energyDelta": 14,
+    "durationMs": 1500,
+    "damageWindowStartMs": 500,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "COUNTER_FAST",
+    "displayId": "COUNTER_FAST",
+    "type": "FIGHTING",
+    "power": 13,
+    "energyDelta": 9,
+    "durationMs": 1000,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "CRABHAMMER",
+    "displayId": "CRABHAMMER",
+    "type": "WATER",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 1850
+  },
+  {
+    "id": "CROSS_CHOP",
+    "displayId": "CROSS_CHOP",
+    "type": "FIGHTING",
+    "power": 50,
+    "energyDelta": -50,
+    "durationMs": 1500,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1200
+  },
+  {
+    "id": "CROSS_POISON",
+    "displayId": "CROSS_POISON",
+    "type": "POISON",
+    "power": 40,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "CRUNCH",
+    "displayId": "CRUNCH",
+    "type": "DARK",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "CRUSH_CLAW",
+    "displayId": "CRUSH_CLAW",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "CRUSH_GRIP",
+    "displayId": "CRUSH_GRIP",
+    "type": "NORMAL",
+    "power": 210,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 700,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "CUT_FAST",
+    "displayId": "CUT_FAST",
+    "type": "NORMAL",
+    "power": 5,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "DARK_PULSE",
+    "displayId": "DARK_PULSE",
+    "type": "DARK",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "DARKEST_LARIAT",
+    "displayId": "DARKEST_LARIAT",
+    "type": "DARK",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "DAZZLING_GLEAM",
+    "displayId": "DAZZLING_GLEAM",
+    "type": "FAIRY",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 3300
+  },
+  {
+    "id": "DIG",
+    "displayId": "DIG",
+    "type": "GROUND",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 4500,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 4300
+  },
+  {
+    "id": "DISARMING_VOICE",
+    "displayId": "DISARMING_VOICE",
+    "type": "FAIRY",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 4000,
+    "damageWindowStartMs": 3300,
+    "damageWindowEndMs": 3600
+  },
+  {
+    "id": "DISCHARGE",
+    "displayId": "DISCHARGE",
+    "type": "ELECTRIC",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 2100
+  },
+  {
+    "id": "DOOM_DESIRE",
+    "displayId": "DOOM_DESIRE",
+    "type": "STEEL",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "DOUBLE_IRON_BASH",
+    "displayId": "DOUBLE_IRON_BASH",
+    "type": "STEEL",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "DOUBLE_KICK_FAST",
+    "displayId": "DOUBLE_KICK_FAST",
+    "type": "FIGHTING",
+    "power": 10,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "DRACO_METEOR",
+    "displayId": "DRACO_METEOR",
+    "type": "DRAGON",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2900,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "DRAGON_ASCENT",
+    "displayId": "DRAGON_ASCENT",
+    "type": "FLYING",
+    "power": 140,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3250,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "DRAGON_BREATH_FAST",
+    "displayId": "DRAGON_BREATH_FAST",
+    "type": "DRAGON",
+    "power": 6,
+    "energyDelta": 4,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "DRAGON_CLAW",
+    "displayId": "DRAGON_CLAW",
+    "type": "DRAGON",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1100
+  },
+  {
+    "id": "DRAGON_ENERGY",
+    "displayId": "DRAGON_ENERGY",
+    "type": "DRAGON",
+    "power": 155,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1880,
+    "damageWindowEndMs": 3200
+  },
+  {
+    "id": "DRAGON_PULSE",
+    "displayId": "DRAGON_PULSE",
+    "type": "DRAGON",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2050,
+    "damageWindowEndMs": 3200
+  },
+  {
+    "id": "DRAGON_TAIL_FAST",
+    "displayId": "DRAGON_TAIL_FAST",
+    "type": "DRAGON",
+    "power": 14,
+    "energyDelta": 8,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "DRAIN_PUNCH",
+    "displayId": "DRAIN_PUNCH",
+    "type": "FIGHTING",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "DRAINING_KISS",
+    "displayId": "DRAINING_KISS",
+    "type": "FAIRY",
+    "power": 60,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1200
+  },
+  {
+    "id": "DRILL_PECK",
+    "displayId": "DRILL_PECK",
+    "type": "FLYING",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "DRILL_RUN",
+    "displayId": "DRILL_RUN",
+    "type": "GROUND",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "DRUM_BEATING",
+    "displayId": "DRUM_BEATING",
+    "type": "GRASS",
+    "power": 115,
+    "energyDelta": -33,
+    "durationMs": 4500,
+    "damageWindowStartMs": 3000,
+    "damageWindowEndMs": 4000
+  },
+  {
+    "id": "DYNAMIC_PUNCH",
+    "displayId": "DYNAMIC_PUNCH",
+    "type": "FIGHTING",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "EARTH_POWER",
+    "displayId": "EARTH_POWER",
+    "type": "GROUND",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 3300
+  },
+  {
+    "id": "EARTHQUAKE",
+    "displayId": "EARTHQUAKE",
+    "type": "GROUND",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "EMBER_FAST",
+    "displayId": "EMBER_FAST",
+    "type": "FIRE",
+    "power": 10,
+    "energyDelta": 10,
+    "durationMs": 1000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "ENERGY_BALL",
+    "displayId": "ENERGY_BALL",
+    "type": "GRASS",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 4000,
+    "damageWindowStartMs": 3100,
+    "damageWindowEndMs": 3900
+  },
+  {
+    "id": "EXTRASENSORY_FAST",
+    "displayId": "EXTRASENSORY_FAST",
+    "type": "PSYCHIC",
+    "power": 11,
+    "energyDelta": 11,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "FAIRY_WIND_FAST",
+    "displayId": "FAIRY_WIND_FAST",
+    "type": "FAIRY",
+    "power": 9,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 630,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "FEATHER_DANCE",
+    "displayId": "FEATHER_DANCE",
+    "type": "FLYING",
+    "power": 35,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "FEINT_ATTACK_FAST",
+    "displayId": "FEINT_ATTACK_FAST",
+    "type": "DARK",
+    "power": 11,
+    "energyDelta": 10,
+    "durationMs": 1000,
+    "damageWindowStartMs": 850,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "FELL_STINGER",
+    "displayId": "FELL_STINGER",
+    "type": "BUG",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "FIRE_BLAST",
+    "displayId": "FIRE_BLAST",
+    "type": "FIRE",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 4000,
+    "damageWindowStartMs": 2900,
+    "damageWindowEndMs": 3700
+  },
+  {
+    "id": "FIRE_FANG_FAST",
+    "displayId": "FIRE_FANG_FAST",
+    "type": "FIRE",
+    "power": 13,
+    "energyDelta": 9,
+    "durationMs": 1000,
+    "damageWindowStartMs": 740,
+    "damageWindowEndMs": 940
+  },
+  {
+    "id": "FIRE_PUNCH",
+    "displayId": "FIRE_PUNCH",
+    "type": "FIRE",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "FIRE_SPIN_FAST",
+    "displayId": "FIRE_SPIN_FAST",
+    "type": "FIRE",
+    "power": 13,
+    "energyDelta": 9,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "FISSURE",
+    "displayId": "FISSURE",
+    "type": "GROUND",
+    "power": 9001,
+    "energyDelta": -25,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "FLAME_BURST",
+    "displayId": "FLAME_BURST",
+    "type": "FIRE",
+    "power": 70,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "FLAME_CHARGE",
+    "displayId": "FLAME_CHARGE",
+    "type": "FIRE",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 4000,
+    "damageWindowStartMs": 3100,
+    "damageWindowEndMs": 3650
+  },
+  {
+    "id": "FLAME_WHEEL",
+    "displayId": "FLAME_WHEEL",
+    "type": "FIRE",
+    "power": 55,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "FLAMETHROWER",
+    "displayId": "FLAMETHROWER",
+    "type": "FIRE",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "FLASH_CANNON",
+    "displayId": "FLASH_CANNON",
+    "type": "STEEL",
+    "power": 100,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "FLOWER_TRICK",
+    "displayId": "FLOWER_TRICK",
+    "type": "GRASS",
+    "power": 75,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "FLY",
+    "displayId": "FLY",
+    "type": "FLYING",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "FLYING_PRESS",
+    "displayId": "FLYING_PRESS",
+    "type": "FIGHTING",
+    "power": 115,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "FOCUS_BLAST",
+    "displayId": "FOCUS_BLAST",
+    "type": "FIGHTING",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3000,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "FORCE_PALM_FAST",
+    "displayId": "FORCE_PALM_FAST",
+    "type": "FIGHTING",
+    "power": 10,
+    "energyDelta": 16,
+    "durationMs": 1000,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "FOUL_PLAY",
+    "displayId": "FOUL_PLAY",
+    "type": "DARK",
+    "power": 70,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "FREEZE_SHOCK",
+    "displayId": "FREEZE_SHOCK",
+    "type": "ICE",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "FRENZY_PLANT",
+    "displayId": "FRENZY_PLANT",
+    "type": "GRASS",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2045,
+    "damageWindowEndMs": 2450
+  },
+  {
+    "id": "FROST_BREATH_FAST",
+    "displayId": "FROST_BREATH_FAST",
+    "type": "ICE",
+    "power": 11,
+    "energyDelta": 9,
+    "durationMs": 1000,
+    "damageWindowStartMs": 550,
+    "damageWindowEndMs": 850
+  },
+  {
+    "id": "FRUSTRATION",
+    "displayId": "FRUSTRATION",
+    "type": "NORMAL",
+    "power": 10,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "FURY_CUTTER_FAST",
+    "displayId": "FURY_CUTTER_FAST",
+    "type": "BUG",
+    "power": 4,
+    "energyDelta": 8,
+    "durationMs": 500,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "FUSION_BOLT",
+    "displayId": "FUSION_BOLT",
+    "type": "ELECTRIC",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "FUSION_FLARE",
+    "displayId": "FUSION_FLARE",
+    "type": "FIRE",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "FUTURESIGHT",
+    "displayId": "FUTURESIGHT",
+    "type": "PSYCHIC",
+    "power": 115,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "GEOMANCY_FAST",
+    "displayId": "GEOMANCY_FAST",
+    "type": "FAIRY",
+    "power": 20,
+    "energyDelta": 14,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "GIGA_DRAIN",
+    "displayId": "GIGA_DRAIN",
+    "type": "GRASS",
+    "power": 50,
+    "energyDelta": -100,
+    "durationMs": 4000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "GIGA_IMPACT",
+    "displayId": "GIGA_IMPACT",
+    "type": "NORMAL",
+    "power": 200,
+    "energyDelta": -100,
+    "durationMs": 4500,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "GIGATON_HAMMER",
+    "displayId": "GIGATON_HAMMER",
+    "type": "STEEL",
+    "power": 300,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3100
+  },
+  {
+    "id": "GLACIATE",
+    "displayId": "GLACIATE",
+    "type": "ICE",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "GRASS_KNOT",
+    "displayId": "GRASS_KNOT",
+    "type": "GRASS",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "GUNK_SHOT",
+    "displayId": "GUNK_SHOT",
+    "type": "POISON",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2600
+  },
+  {
+    "id": "GUST_FAST",
+    "displayId": "GUST_FAST",
+    "type": "FLYING",
+    "power": 25,
+    "energyDelta": 20,
+    "durationMs": 2000,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "GYRO_BALL",
+    "displayId": "GYRO_BALL",
+    "type": "STEEL",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 3200,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "HEART_STAMP",
+    "displayId": "HEART_STAMP",
+    "type": "PSYCHIC",
+    "power": 40,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "HEAT_WAVE",
+    "displayId": "HEAT_WAVE",
+    "type": "FIRE",
+    "power": 95,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "HEAVY_SLAM",
+    "displayId": "HEAVY_SLAM",
+    "type": "STEEL",
+    "power": 70,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "HEX_FAST",
+    "displayId": "HEX_FAST",
+    "type": "GHOST",
+    "power": 8,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "HIDDEN_POWER_FAST",
+    "displayId": "HIDDEN_POWER_FAST",
+    "type": "NORMAL",
+    "power": 15,
+    "energyDelta": 15,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "HIGH_HORSEPOWER",
+    "displayId": "HIGH_HORSEPOWER",
+    "type": "GROUND",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1100
+  },
+  {
+    "id": "HIGH_JUMP_KICK",
+    "displayId": "HIGH_JUMP_KICK",
+    "type": "FIGHTING",
+    "power": 90,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 450,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "HORN_ATTACK",
+    "displayId": "HORN_ATTACK",
+    "type": "NORMAL",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 950,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "HORN_DRILL",
+    "displayId": "HORN_DRILL",
+    "type": "NORMAL",
+    "power": 9000,
+    "energyDelta": -25,
+    "durationMs": 2000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "HURRICANE",
+    "displayId": "HURRICANE",
+    "type": "FLYING",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "HYDRO_CANNON",
+    "displayId": "HYDRO_CANNON",
+    "type": "WATER",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "HYDRO_PUMP",
+    "displayId": "HYDRO_PUMP",
+    "type": "WATER",
+    "power": 135,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 3200
+  },
+  {
+    "id": "HYDRO_PUMP_BLASTOISE",
+    "displayId": "HYDRO_PUMP_BLASTOISE",
+    "type": "WATER",
+    "power": 90,
+    "energyDelta": -100,
+    "durationMs": 4500,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 4300
+  },
+  {
+    "id": "HYPER_BEAM",
+    "displayId": "HYPER_BEAM",
+    "type": "NORMAL",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 4000,
+    "damageWindowStartMs": 3500,
+    "damageWindowEndMs": 3800
+  },
+  {
+    "id": "HYPER_FANG",
+    "displayId": "HYPER_FANG",
+    "type": "NORMAL",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "ICE_BEAM",
+    "displayId": "ICE_BEAM",
+    "type": "ICE",
+    "power": 95,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 3000
+  },
+  {
+    "id": "ICE_BURN",
+    "displayId": "ICE_BURN",
+    "type": "ICE",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "ICE_FANG_FAST",
+    "displayId": "ICE_FANG_FAST",
+    "type": "ICE",
+    "power": 12,
+    "energyDelta": 20,
+    "durationMs": 1500,
+    "damageWindowStartMs": 400,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "ICE_PUNCH",
+    "displayId": "ICE_PUNCH",
+    "type": "ICE",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "ICE_SHARD_FAST",
+    "displayId": "ICE_SHARD_FAST",
+    "type": "ICE",
+    "power": 10,
+    "energyDelta": 10,
+    "durationMs": 1000,
+    "damageWindowStartMs": 400,
+    "damageWindowEndMs": 700
+  },
+  {
+    "id": "ICICLE_SPEAR",
+    "displayId": "ICICLE_SPEAR",
+    "type": "ICE",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "ICY_WIND",
+    "displayId": "ICY_WIND",
+    "type": "ICE",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 3000
+  },
+  {
+    "id": "INCINERATE_FAST",
+    "displayId": "INCINERATE_FAST",
+    "type": "FIRE",
+    "power": 32,
+    "energyDelta": 22,
+    "durationMs": 2500,
+    "damageWindowStartMs": 700,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "INFESTATION_FAST",
+    "displayId": "INFESTATION_FAST",
+    "type": "BUG",
+    "power": 9,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "IRON_HEAD",
+    "displayId": "IRON_HEAD",
+    "type": "STEEL",
+    "power": 60,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "IRON_TAIL_FAST",
+    "displayId": "IRON_TAIL_FAST",
+    "type": "STEEL",
+    "power": 14,
+    "energyDelta": 6,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "KARATE_CHOP_FAST",
+    "displayId": "KARATE_CHOP_FAST",
+    "type": "FIGHTING",
+    "power": 10,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "LAST_RESORT",
+    "displayId": "LAST_RESORT",
+    "type": "NORMAL",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2800,
+    "damageWindowEndMs": 2950
+  },
+  {
+    "id": "LEAF_BLADE",
+    "displayId": "LEAF_BLADE",
+    "type": "GRASS",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1350,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "LEAF_STORM",
+    "displayId": "LEAF_STORM",
+    "type": "GRASS",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1250
+  },
+  {
+    "id": "LEAF_TORNADO",
+    "displayId": "LEAF_TORNADO",
+    "type": "GRASS",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "LEAFAGE_FAST",
+    "displayId": "LEAFAGE_FAST",
+    "type": "GRASS",
+    "power": 6,
+    "energyDelta": 4,
+    "durationMs": 500,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 700
+  },
+  {
+    "id": "LEECH_LIFE",
+    "displayId": "LEECH_LIFE",
+    "type": "BUG",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1150,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "LICK_FAST",
+    "displayId": "LICK_FAST",
+    "type": "GHOST",
+    "power": 5,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "LIQUIDATION",
+    "displayId": "LIQUIDATION",
+    "type": "WATER",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "LOCK_ON_FAST",
+    "displayId": "LOCK_ON_FAST",
+    "type": "NORMAL",
+    "power": 2,
+    "energyDelta": 10,
+    "durationMs": 500,
+    "damageWindowStartMs": 370,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "LOW_KICK_FAST",
+    "displayId": "LOW_KICK_FAST",
+    "type": "FIGHTING",
+    "power": 5,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "LOW_SWEEP",
+    "displayId": "LOW_SWEEP",
+    "type": "FIGHTING",
+    "power": 40,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 1750
+  },
+  {
+    "id": "LUNGE",
+    "displayId": "LUNGE",
+    "type": "BUG",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2500,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "LUSTER_PURGE",
+    "displayId": "LUSTER_PURGE",
+    "type": "PSYCHIC",
+    "power": 100,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 500,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "MAGICAL_LEAF_FAST",
+    "displayId": "MAGICAL_LEAF_FAST",
+    "type": "GRASS",
+    "power": 17,
+    "energyDelta": 17,
+    "durationMs": 1500,
+    "damageWindowStartMs": 850,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "MAGMA_STORM",
+    "displayId": "MAGMA_STORM",
+    "type": "FIRE",
+    "power": 75,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "MAGNET_BOMB",
+    "displayId": "MAGNET_BOMB",
+    "type": "STEEL",
+    "power": 75,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2400,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "MEGA_DRAIN",
+    "displayId": "MEGA_DRAIN",
+    "type": "GRASS",
+    "power": 25,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 850,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "MEGAHORN",
+    "displayId": "MEGAHORN",
+    "type": "BUG",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "METAL_CLAW_FAST",
+    "displayId": "METAL_CLAW_FAST",
+    "type": "STEEL",
+    "power": 6,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 230,
+    "damageWindowEndMs": 430
+  },
+  {
+    "id": "METAL_SOUND_FAST",
+    "displayId": "METAL_SOUND_FAST",
+    "type": "STEEL",
+    "power": 4,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 700
+  },
+  {
+    "id": "METEOR_BEAM",
+    "displayId": "METEOR_BEAM",
+    "type": "ROCK",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "METEOR_MASH",
+    "displayId": "METEOR_MASH",
+    "type": "STEEL",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "MIND_BLOWN",
+    "displayId": "MIND_BLOWN",
+    "type": "FIRE",
+    "power": 130,
+    "energyDelta": -33,
+    "durationMs": 4000,
+    "damageWindowStartMs": 3000,
+    "damageWindowEndMs": 4000
+  },
+  {
+    "id": "MIRROR_COAT",
+    "displayId": "MIRROR_COAT",
+    "type": "PSYCHIC",
+    "power": 60,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "MIRROR_SHOT",
+    "displayId": "MIRROR_SHOT",
+    "type": "STEEL",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "MIST_BALL",
+    "displayId": "MIST_BALL",
+    "type": "PSYCHIC",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "MOONBLAST",
+    "displayId": "MOONBLAST",
+    "type": "FAIRY",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 4000,
+    "damageWindowStartMs": 2300,
+    "damageWindowEndMs": 3800
+  },
+  {
+    "id": "MOONGEIST_BEAM",
+    "displayId": "MOONGEIST_BEAM",
+    "type": "GHOST",
+    "power": 230,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 3000
+  },
+  {
+    "id": "MUD_BOMB",
+    "displayId": "MUD_BOMB",
+    "type": "GROUND",
+    "power": 60,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "MUD_SHOT_FAST",
+    "displayId": "MUD_SHOT_FAST",
+    "type": "GROUND",
+    "power": 4,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 250,
+    "damageWindowEndMs": 450
+  },
+  {
+    "id": "MUD_SLAP_FAST",
+    "displayId": "MUD_SLAP_FAST",
+    "type": "GROUND",
+    "power": 19,
+    "energyDelta": 13,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1450
+  },
+  {
+    "id": "MUDDY_WATER",
+    "displayId": "MUDDY_WATER",
+    "type": "WATER",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "MYSTICAL_FIRE",
+    "displayId": "MYSTICAL_FIRE",
+    "type": "FIRE",
+    "power": 60,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "NATURES_MADNESS",
+    "displayId": "NATURES_MADNESS",
+    "type": "FAIRY",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "NIGHT_SHADE",
+    "displayId": "NIGHT_SHADE",
+    "type": "GHOST",
+    "power": 60,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "NIGHT_SLASH",
+    "displayId": "NIGHT_SLASH",
+    "type": "DARK",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "OBLIVION_WING",
+    "displayId": "OBLIVION_WING",
+    "type": "FLYING",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "OBSTRUCT",
+    "displayId": "OBSTRUCT",
+    "type": "DARK",
+    "power": 20,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "OCTAZOOKA",
+    "displayId": "OCTAZOOKA",
+    "type": "WATER",
+    "power": 55,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "OMINOUS_WIND",
+    "displayId": "OMINOUS_WIND",
+    "type": "GHOST",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2050,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "ORIGIN_PULSE",
+    "displayId": "ORIGIN_PULSE",
+    "type": "WATER",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "OUTRAGE",
+    "displayId": "OUTRAGE",
+    "type": "DRAGON",
+    "power": 110,
+    "energyDelta": -50,
+    "durationMs": 4000,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 3800
+  },
+  {
+    "id": "OVERHEAT",
+    "displayId": "OVERHEAT",
+    "type": "FIRE",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 4000,
+    "damageWindowStartMs": 2600,
+    "damageWindowEndMs": 3800
+  },
+  {
+    "id": "PARABOLIC_CHARGE",
+    "displayId": "PARABOLIC_CHARGE",
+    "type": "ELECTRIC",
+    "power": 70,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2600
+  },
+  {
+    "id": "PAYBACK",
+    "displayId": "PAYBACK",
+    "type": "DARK",
+    "power": 95,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "PECK_FAST",
+    "displayId": "PECK_FAST",
+    "type": "FLYING",
+    "power": 10,
+    "energyDelta": 10,
+    "durationMs": 1000,
+    "damageWindowStartMs": 450,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "PETAL_BLIZZARD",
+    "displayId": "PETAL_BLIZZARD",
+    "type": "GRASS",
+    "power": 110,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "PLAY_ROUGH",
+    "displayId": "PLAY_ROUGH",
+    "type": "FAIRY",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "POISON_FANG",
+    "displayId": "POISON_FANG",
+    "type": "POISON",
+    "power": 30,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 700,
+    "damageWindowEndMs": 1200
+  },
+  {
+    "id": "POISON_JAB_FAST",
+    "displayId": "POISON_JAB_FAST",
+    "type": "POISON",
+    "power": 13,
+    "energyDelta": 9,
+    "durationMs": 1000,
+    "damageWindowStartMs": 400,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "POISON_STING_FAST",
+    "displayId": "POISON_STING_FAST",
+    "type": "POISON",
+    "power": 4,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 275,
+    "damageWindowEndMs": 475
+  },
+  {
+    "id": "POLTERGEIST",
+    "displayId": "POLTERGEIST",
+    "type": "GHOST",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2700,
+    "damageWindowEndMs": 2900
+  },
+  {
+    "id": "POUND_FAST",
+    "displayId": "POUND_FAST",
+    "type": "NORMAL",
+    "power": 6,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 240,
+    "damageWindowEndMs": 440
+  },
+  {
+    "id": "POWDER_SNOW_FAST",
+    "displayId": "POWDER_SNOW_FAST",
+    "type": "ICE",
+    "power": 6,
+    "energyDelta": 15,
+    "durationMs": 1000,
+    "damageWindowStartMs": 850,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "POWER_GEM",
+    "displayId": "POWER_GEM",
+    "type": "ROCK",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2050,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "POWER_UP_PUNCH",
+    "displayId": "POWER_UP_PUNCH",
+    "type": "FIGHTING",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "POWER_WHIP",
+    "displayId": "POWER_WHIP",
+    "type": "GRASS",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1150,
+    "damageWindowEndMs": 2250
+  },
+  {
+    "id": "PRECIPICE_BLADES",
+    "displayId": "PRECIPICE_BLADES",
+    "type": "GROUND",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "PRESENT_FAST",
+    "displayId": "PRESENT_FAST",
+    "type": "NORMAL",
+    "power": 6,
+    "energyDelta": 23,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "PSYBEAM",
+    "displayId": "PSYBEAM",
+    "type": "PSYCHIC",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2500
+  },
+  {
+    "id": "PSYCHIC",
+    "displayId": "PSYCHIC",
+    "type": "PSYCHIC",
+    "power": 95,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "PSYCHIC_FANGS",
+    "displayId": "PSYCHIC_FANGS",
+    "type": "PSYCHIC",
+    "power": 25,
+    "energyDelta": -33,
+    "durationMs": 1000,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "PSYCHO_BOOST",
+    "displayId": "PSYCHO_BOOST",
+    "type": "PSYCHIC",
+    "power": 70,
+    "energyDelta": -50,
+    "durationMs": 4000,
+    "damageWindowStartMs": 3500,
+    "damageWindowEndMs": 4000
+  },
+  {
+    "id": "PSYCHO_CUT_FAST",
+    "displayId": "PSYCHO_CUT_FAST",
+    "type": "PSYCHIC",
+    "power": 4,
+    "energyDelta": 7,
+    "durationMs": 500,
+    "damageWindowStartMs": 270,
+    "damageWindowEndMs": 470
+  },
+  {
+    "id": "PSYSHOCK",
+    "displayId": "PSYSHOCK",
+    "type": "PSYCHIC",
+    "power": 60,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "PSYSTRIKE",
+    "displayId": "PSYSTRIKE",
+    "type": "PSYCHIC",
+    "power": 95,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "PSYWAVE_FAST",
+    "displayId": "PSYWAVE_FAST",
+    "type": "PSYCHIC",
+    "power": 4,
+    "energyDelta": 7,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 600
+  },
+  {
+    "id": "PYROBALL",
+    "displayId": "PYROBALL",
+    "type": "FIRE",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "QUICK_ATTACK_FAST",
+    "displayId": "QUICK_ATTACK_FAST",
+    "type": "NORMAL",
+    "power": 10,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 450,
+    "damageWindowEndMs": 750
+  },
+  {
+    "id": "RAGE_FIST",
+    "displayId": "RAGE_FIST",
+    "type": "GHOST",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2750,
+    "damageWindowEndMs": 3000
+  },
+  {
+    "id": "RAZOR_LEAF_FAST",
+    "displayId": "RAZOR_LEAF_FAST",
+    "type": "GRASS",
+    "power": 13,
+    "energyDelta": 7,
+    "durationMs": 1000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 850
+  },
+  {
+    "id": "RAZOR_SHELL",
+    "displayId": "RAZOR_SHELL",
+    "type": "WATER",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 850,
+    "damageWindowEndMs": 1200
+  },
+  {
+    "id": "REST",
+    "displayId": "REST",
+    "type": "NORMAL",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "RETURN",
+    "displayId": "RETURN",
+    "type": "NORMAL",
+    "power": 25,
+    "energyDelta": -33,
+    "durationMs": 500,
+    "damageWindowStartMs": null,
+    "damageWindowEndMs": 150
+  },
+  {
+    "id": "ROAR_OF_TIME",
+    "displayId": "ROAR_OF_TIME",
+    "type": "DRAGON",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 850,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "ROCK_BLAST",
+    "displayId": "ROCK_BLAST",
+    "type": "ROCK",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "ROCK_SLIDE",
+    "displayId": "ROCK_SLIDE",
+    "type": "ROCK",
+    "power": 75,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "ROCK_SMASH_FAST",
+    "displayId": "ROCK_SMASH_FAST",
+    "type": "FIGHTING",
+    "power": 17,
+    "energyDelta": 12,
+    "durationMs": 1500,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "ROCK_THROW_FAST",
+    "displayId": "ROCK_THROW_FAST",
+    "type": "ROCK",
+    "power": 13,
+    "energyDelta": 8,
+    "durationMs": 1000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "ROCK_TOMB",
+    "displayId": "ROCK_TOMB",
+    "type": "ROCK",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2050,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "ROCK_WRECKER",
+    "displayId": "ROCK_WRECKER",
+    "type": "ROCK",
+    "power": 110,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2600
+  },
+  {
+    "id": "ROLLOUT_FAST",
+    "displayId": "ROLLOUT_FAST",
+    "type": "ROCK",
+    "power": 15,
+    "energyDelta": 19,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1060,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "SACRED_FIRE",
+    "displayId": "SACRED_FIRE",
+    "type": "FIRE",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "SACRED_FIRE_PLUS",
+    "displayId": "SACRED_FIRE_PLUS",
+    "type": "FIRE",
+    "power": 135,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "SACRED_FIRE_PLUS_PLUS",
+    "displayId": "SACRED_FIRE_PLUS_PLUS",
+    "type": "FIRE",
+    "power": 155,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "SACRED_SWORD",
+    "displayId": "SACRED_SWORD",
+    "type": "FIGHTING",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 1000,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "SAND_ATTACK_FAST",
+    "displayId": "SAND_ATTACK_FAST",
+    "type": "GROUND",
+    "power": 4,
+    "energyDelta": 7,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 600
+  },
+  {
+    "id": "SAND_TOMB",
+    "displayId": "SAND_TOMB",
+    "type": "GROUND",
+    "power": 60,
+    "energyDelta": -33,
+    "durationMs": 4000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 4000
+  },
+  {
+    "id": "SANDSEAR_STORM",
+    "displayId": "SANDSEAR_STORM",
+    "type": "GROUND",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "SCALD",
+    "displayId": "SCALD",
+    "type": "WATER",
+    "power": 75,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 3200
+  },
+  {
+    "id": "SCALD_BLASTOISE",
+    "displayId": "SCALD_BLASTOISE",
+    "type": "WATER",
+    "power": 50,
+    "energyDelta": -100,
+    "durationMs": 4500,
+    "damageWindowStartMs": 2300,
+    "damageWindowEndMs": 4400
+  },
+  {
+    "id": "SCORCHING_SANDS",
+    "displayId": "SCORCHING_SANDS",
+    "type": "GROUND",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "SCRATCH_FAST",
+    "displayId": "SCRATCH_FAST",
+    "type": "NORMAL",
+    "power": 6,
+    "energyDelta": 4,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "SECRET_SWORD",
+    "displayId": "SECRET_SWORD",
+    "type": "FIGHTING",
+    "power": 120,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "SEED_BOMB",
+    "displayId": "SEED_BOMB",
+    "type": "GRASS",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "SEED_FLARE",
+    "displayId": "SEED_FLARE",
+    "type": "GRASS",
+    "power": 115,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2300,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "SHADOW_BALL",
+    "displayId": "SHADOW_BALL",
+    "type": "GHOST",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2400,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "SHADOW_BONE",
+    "displayId": "SHADOW_BONE",
+    "type": "GHOST",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2450,
+    "damageWindowEndMs": 2900
+  },
+  {
+    "id": "SHADOW_CLAW_FAST",
+    "displayId": "SHADOW_CLAW_FAST",
+    "type": "GHOST",
+    "power": 6,
+    "energyDelta": 4,
+    "durationMs": 500,
+    "damageWindowStartMs": 50,
+    "damageWindowEndMs": 300
+  },
+  {
+    "id": "SHADOW_FORCE",
+    "displayId": "SHADOW_FORCE",
+    "type": "GHOST",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "SHADOW_PUNCH",
+    "displayId": "SHADOW_PUNCH",
+    "type": "GHOST",
+    "power": 35,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "SHADOW_SNEAK",
+    "displayId": "SHADOW_SNEAK",
+    "type": "GHOST",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2300,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "SIGNAL_BEAM",
+    "displayId": "SIGNAL_BEAM",
+    "type": "BUG",
+    "power": 75,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "SILVER_WIND",
+    "displayId": "SILVER_WIND",
+    "type": "BUG",
+    "power": 65,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 3300
+  },
+  {
+    "id": "SKULL_BASH",
+    "displayId": "SKULL_BASH",
+    "type": "NORMAL",
+    "power": 130,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 2200
+  },
+  {
+    "id": "SKY_ATTACK",
+    "displayId": "SKY_ATTACK",
+    "type": "FLYING",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "SLUDGE",
+    "displayId": "SLUDGE",
+    "type": "POISON",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1450
+  },
+  {
+    "id": "SLUDGE_BOMB",
+    "displayId": "SLUDGE_BOMB",
+    "type": "POISON",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "SLUDGE_WAVE",
+    "displayId": "SLUDGE_WAVE",
+    "type": "POISON",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "SMACK_DOWN_FAST",
+    "displayId": "SMACK_DOWN_FAST",
+    "type": "ROCK",
+    "power": 13,
+    "energyDelta": 7,
+    "durationMs": 1000,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "SNARL_FAST",
+    "displayId": "SNARL_FAST",
+    "type": "DARK",
+    "power": 11,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "SOLAR_BEAM",
+    "displayId": "SOLAR_BEAM",
+    "type": "GRASS",
+    "power": 180,
+    "energyDelta": -100,
+    "durationMs": 5000,
+    "damageWindowStartMs": 2800,
+    "damageWindowEndMs": 4800
+  },
+  {
+    "id": "SPACIAL_REND",
+    "displayId": "SPACIAL_REND",
+    "type": "DRAGON",
+    "power": 160,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1370,
+    "damageWindowEndMs": 2950
+  },
+  {
+    "id": "SPARK_FAST",
+    "displayId": "SPARK_FAST",
+    "type": "ELECTRIC",
+    "power": 4,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 100,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "SPARKLING_ARIA",
+    "displayId": "SPARKLING_ARIA",
+    "type": "WATER",
+    "power": 85,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1700,
+    "damageWindowEndMs": 2900
+  },
+  {
+    "id": "SPIRIT_SHACKLE",
+    "displayId": "SPIRIT_SHACKLE",
+    "type": "GHOST",
+    "power": 70,
+    "energyDelta": -33,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "SPLASH_FAST",
+    "displayId": "SPLASH_FAST",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": 17,
+    "durationMs": 1500,
+    "damageWindowStartMs": 800,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "STEEL_WING_FAST",
+    "displayId": "STEEL_WING_FAST",
+    "type": "STEEL",
+    "power": 14,
+    "energyDelta": 8,
+    "durationMs": 1000,
+    "damageWindowStartMs": 700,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "STOMP",
+    "displayId": "STOMP",
+    "type": "NORMAL",
+    "power": 50,
+    "energyDelta": -50,
+    "durationMs": 1500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "STONE_EDGE",
+    "displayId": "STONE_EDGE",
+    "type": "ROCK",
+    "power": 105,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "STRUGGLE",
+    "displayId": "STRUGGLE",
+    "type": "NORMAL",
+    "power": 35,
+    "energyDelta": null,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1000,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "STRUGGLE_BUG_FAST",
+    "displayId": "STRUGGLE_BUG_FAST",
+    "type": "BUG",
+    "power": 15,
+    "energyDelta": 15,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "SUBMISSION",
+    "displayId": "SUBMISSION",
+    "type": "FIGHTING",
+    "power": 55,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 1800
+  },
+  {
+    "id": "SUCKER_PUNCH_FAST",
+    "displayId": "SUCKER_PUNCH_FAST",
+    "type": "DARK",
+    "power": 5,
+    "energyDelta": 6,
+    "durationMs": 500,
+    "damageWindowStartMs": 100,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "SUNSTEEL_STRIKE",
+    "displayId": "SUNSTEEL_STRIKE",
+    "type": "STEEL",
+    "power": 230,
+    "energyDelta": -100,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 3000
+  },
+  {
+    "id": "SUPER_POWER",
+    "displayId": "SUPER_POWER",
+    "type": "FIGHTING",
+    "power": 85,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "SURF",
+    "displayId": "SURF",
+    "type": "WATER",
+    "power": 60,
+    "energyDelta": -50,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "SWIFT",
+    "displayId": "SWIFT",
+    "type": "NORMAL",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2200,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "SYNCHRONOISE",
+    "displayId": "SYNCHRONOISE",
+    "type": "PSYCHIC",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "TACKLE_FAST",
+    "displayId": "TACKLE_FAST",
+    "type": "NORMAL",
+    "power": 5,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "TAKE_DOWN_FAST",
+    "displayId": "TAKE_DOWN_FAST",
+    "type": "NORMAL",
+    "power": 7,
+    "energyDelta": 8,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "TECHNO_BLAST_BURN",
+    "displayId": "TECHNO_BLAST_BURN",
+    "type": "FIRE",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "TECHNO_BLAST_CHILL",
+    "displayId": "TECHNO_BLAST_CHILL",
+    "type": "ICE",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1400,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "TECHNO_BLAST_NORMAL",
+    "displayId": "TECHNO_BLAST_NORMAL",
+    "type": "NORMAL",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "TECHNO_BLAST_SHOCK",
+    "displayId": "TECHNO_BLAST_SHOCK",
+    "type": "ELECTRIC",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "TECHNO_BLAST_WATER",
+    "displayId": "TECHNO_BLAST_WATER",
+    "type": "WATER",
+    "power": 120,
+    "energyDelta": -100,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "THUNDER",
+    "displayId": "THUNDER",
+    "type": "ELECTRIC",
+    "power": 100,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "THUNDER_CAGE",
+    "displayId": "THUNDER_CAGE",
+    "type": "ELECTRIC",
+    "power": 220,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 1880,
+    "damageWindowEndMs": 3200
+  },
+  {
+    "id": "THUNDER_FANG_FAST",
+    "displayId": "THUNDER_FANG_FAST",
+    "type": "ELECTRIC",
+    "power": 10,
+    "energyDelta": 13,
+    "durationMs": 1000,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 700
+  },
+  {
+    "id": "THUNDER_PUNCH",
+    "displayId": "THUNDER_PUNCH",
+    "type": "ELECTRIC",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 1750
+  },
+  {
+    "id": "THUNDER_SHOCK_FAST",
+    "displayId": "THUNDER_SHOCK_FAST",
+    "type": "ELECTRIC",
+    "power": 4,
+    "energyDelta": 7,
+    "durationMs": 500,
+    "damageWindowStartMs": 200,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "THUNDERBOLT",
+    "displayId": "THUNDERBOLT",
+    "type": "ELECTRIC",
+    "power": 80,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1800,
+    "damageWindowEndMs": 2300
+  },
+  {
+    "id": "TORCH_SONG",
+    "displayId": "TORCH_SONG",
+    "type": "FIRE",
+    "power": 100,
+    "energyDelta": -50,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2500,
+    "damageWindowEndMs": 3500
+  },
+  {
+    "id": "TRAILBLAZE",
+    "displayId": "TRAILBLAZE",
+    "type": "GRASS",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1900
+  },
+  {
+    "id": "TRANSFORM_FAST",
+    "displayId": "TRANSFORM_FAST",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2000,
+    "damageWindowStartMs": 70,
+    "damageWindowEndMs": 470
+  },
+  {
+    "id": "TRI_ATTACK",
+    "displayId": "TRI_ATTACK",
+    "type": "NORMAL",
+    "power": 75,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1300,
+    "damageWindowEndMs": 2400
+  },
+  {
+    "id": "TRIPLE_AXEL",
+    "displayId": "TRIPLE_AXEL",
+    "type": "ICE",
+    "power": 60,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1500,
+    "damageWindowEndMs": 1700
+  },
+  {
+    "id": "TWISTER",
+    "displayId": "TWISTER",
+    "type": "DRAGON",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1150,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "UPPER_HAND",
+    "displayId": "UPPER_HAND",
+    "type": "FIGHTING",
+    "power": 50,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 2300,
+    "damageWindowEndMs": 3100
+  },
+  {
+    "id": "V_CREATE",
+    "displayId": "V_CREATE",
+    "type": "FIRE",
+    "power": 105,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 1900,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "VICE_GRIP",
+    "displayId": "VICE_GRIP",
+    "type": "NORMAL",
+    "power": 35,
+    "energyDelta": -33,
+    "durationMs": 2000,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1600
+  },
+  {
+    "id": "VINE_WHIP_FAST",
+    "displayId": "VINE_WHIP_FAST",
+    "type": "GRASS",
+    "power": 6,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 250,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "VN_BM_001",
+    "displayId": "VN_BM_001",
+    "type": "FIRE",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_002",
+    "displayId": "VN_BM_002",
+    "type": "BUG",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_003",
+    "displayId": "VN_BM_003",
+    "type": "ELECTRIC",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_004",
+    "displayId": "VN_BM_004",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_005",
+    "displayId": "VN_BM_005",
+    "type": "FIGHTING",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_006",
+    "displayId": "VN_BM_006",
+    "type": "GHOST",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_007",
+    "displayId": "VN_BM_007",
+    "type": "ICE",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_008",
+    "displayId": "VN_BM_008",
+    "type": "POISON",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_009",
+    "displayId": "VN_BM_009",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_010",
+    "displayId": "VN_BM_010",
+    "type": "FLYING",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_011",
+    "displayId": "VN_BM_011",
+    "type": "FAIRY",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_012",
+    "displayId": "VN_BM_012",
+    "type": "DRAGON",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_013",
+    "displayId": "VN_BM_013",
+    "type": "PSYCHIC",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_014",
+    "displayId": "VN_BM_014",
+    "type": "ROCK",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_015",
+    "displayId": "VN_BM_015",
+    "type": "GROUND",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_016",
+    "displayId": "VN_BM_016",
+    "type": "DARK",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_017",
+    "displayId": "VN_BM_017",
+    "type": "GRASS",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_018",
+    "displayId": "VN_BM_018",
+    "type": "STEEL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_019",
+    "displayId": "VN_BM_019",
+    "type": "FIRE",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_020",
+    "displayId": "VN_BM_020",
+    "type": "BUG",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_021",
+    "displayId": "VN_BM_021",
+    "type": "ELECTRIC",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_022",
+    "displayId": "VN_BM_022",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_023",
+    "displayId": "VN_BM_023",
+    "type": "FIGHTING",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_024",
+    "displayId": "VN_BM_024",
+    "type": "GHOST",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_025",
+    "displayId": "VN_BM_025",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_026",
+    "displayId": "VN_BM_026",
+    "type": "ICE",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_027",
+    "displayId": "VN_BM_027",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_028",
+    "displayId": "VN_BM_028",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_029",
+    "displayId": "VN_BM_029",
+    "type": "POISON",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_030",
+    "displayId": "VN_BM_030",
+    "type": "STEEL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_031",
+    "displayId": "VN_BM_031",
+    "type": "FLYING",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_032",
+    "displayId": "VN_BM_032",
+    "type": "PSYCHIC",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_033",
+    "displayId": "VN_BM_033",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_034",
+    "displayId": "VN_BM_034",
+    "type": "ROCK",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_035",
+    "displayId": "VN_BM_035",
+    "type": "GRASS",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_036",
+    "displayId": "VN_BM_036",
+    "type": "GRASS",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_037",
+    "displayId": "VN_BM_037",
+    "type": "GROUND",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_038",
+    "displayId": "VN_BM_038",
+    "type": "ELECTRIC",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_039",
+    "displayId": "VN_BM_039",
+    "type": "FIRE",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_040",
+    "displayId": "VN_BM_040",
+    "type": "FAIRY",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_041",
+    "displayId": "VN_BM_041",
+    "type": "DARK",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_042",
+    "displayId": "VN_BM_042",
+    "type": "FAIRY",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_043",
+    "displayId": "VN_BM_043",
+    "type": "STEEL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_044",
+    "displayId": "VN_BM_044",
+    "type": "DRAGON",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_045",
+    "displayId": "VN_BM_045",
+    "type": "GRASS",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_046",
+    "displayId": "VN_BM_046",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_047",
+    "displayId": "VN_BM_047",
+    "type": "GRASS",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_048",
+    "displayId": "VN_BM_048",
+    "type": "FIRE",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_049",
+    "displayId": "VN_BM_049",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_050",
+    "displayId": "VN_BM_050",
+    "type": "DARK",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_051",
+    "displayId": "VN_BM_051",
+    "type": "WATER",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_052",
+    "displayId": "VN_BM_052",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_053",
+    "displayId": "VN_BM_053",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_054",
+    "displayId": "VN_BM_054",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_055",
+    "displayId": "VN_BM_055",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_056",
+    "displayId": "VN_BM_056",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_057",
+    "displayId": "VN_BM_057",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_058",
+    "displayId": "VN_BM_058",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_059",
+    "displayId": "VN_BM_059",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_060",
+    "displayId": "VN_BM_060",
+    "type": "STEEL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_061",
+    "displayId": "VN_BM_061",
+    "type": "STEEL",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VN_BM_062",
+    "displayId": "VN_BM_062",
+    "type": "DRAGON",
+    "power": null,
+    "energyDelta": null,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 3400
+  },
+  {
+    "id": "VOLT_SWITCH_FAST",
+    "displayId": "VOLT_SWITCH_FAST",
+    "type": "ELECTRIC",
+    "power": 13,
+    "energyDelta": 20,
+    "durationMs": 1500,
+    "damageWindowStartMs": 600,
+    "damageWindowEndMs": 800
+  },
+  {
+    "id": "VOLT_TACKLE",
+    "displayId": "VOLT_TACKLE",
+    "type": "ELECTRIC",
+    "power": 90,
+    "energyDelta": -33,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2100,
+    "damageWindowEndMs": 2600
+  },
+  {
+    "id": "WATER_GUN_FAST",
+    "displayId": "WATER_GUN_FAST",
+    "type": "WATER",
+    "power": 5,
+    "energyDelta": 5,
+    "durationMs": 500,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "WATER_GUN_FAST_BLASTOISE",
+    "displayId": "WATER_GUN_FAST_BLASTOISE",
+    "type": "WATER",
+    "power": 10,
+    "energyDelta": 6,
+    "durationMs": 1000,
+    "damageWindowStartMs": 300,
+    "damageWindowEndMs": 500
+  },
+  {
+    "id": "WATER_PULSE",
+    "displayId": "WATER_PULSE",
+    "type": "WATER",
+    "power": 65,
+    "energyDelta": -50,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2700
+  },
+  {
+    "id": "WATER_SHURIKEN_FAST",
+    "displayId": "WATER_SHURIKEN_FAST",
+    "type": "WATER",
+    "power": 9,
+    "energyDelta": 14,
+    "durationMs": 1000,
+    "damageWindowStartMs": 900,
+    "damageWindowEndMs": 1000
+  },
+  {
+    "id": "WATERFALL_FAST",
+    "displayId": "WATERFALL_FAST",
+    "type": "WATER",
+    "power": 13,
+    "energyDelta": 7,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 900
+  },
+  {
+    "id": "WEATHER_BALL_FIRE",
+    "displayId": "WEATHER_BALL_FIRE",
+    "type": "FIRE",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "WEATHER_BALL_ICE",
+    "displayId": "WEATHER_BALL_ICE",
+    "type": "ICE",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "WEATHER_BALL_NORMAL",
+    "displayId": "WEATHER_BALL_NORMAL",
+    "type": "NORMAL",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "WEATHER_BALL_ROCK",
+    "displayId": "WEATHER_BALL_ROCK",
+    "type": "ROCK",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "WEATHER_BALL_WATER",
+    "displayId": "WEATHER_BALL_WATER",
+    "type": "WATER",
+    "power": 55,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1250,
+    "damageWindowEndMs": 1500
+  },
+  {
+    "id": "WILD_CHARGE",
+    "displayId": "WILD_CHARGE",
+    "type": "ELECTRIC",
+    "power": 90,
+    "energyDelta": -50,
+    "durationMs": 2500,
+    "damageWindowStartMs": 1600,
+    "damageWindowEndMs": 2000
+  },
+  {
+    "id": "WILDBOLT_STORM",
+    "displayId": "WILDBOLT_STORM",
+    "type": "ELECTRIC",
+    "power": 150,
+    "energyDelta": -100,
+    "durationMs": 2500,
+    "damageWindowStartMs": 2000,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "WING_ATTACK_FAST",
+    "displayId": "WING_ATTACK_FAST",
+    "type": "FLYING",
+    "power": 10,
+    "energyDelta": 11,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  },
+  {
+    "id": "WRAP",
+    "displayId": "WRAP",
+    "type": "NORMAL",
+    "power": 60,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2150,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "WRAP_GREEN",
+    "displayId": "WRAP_GREEN",
+    "type": "NORMAL",
+    "power": 25,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2150,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "WRAP_PINK",
+    "displayId": "WRAP_PINK",
+    "type": "NORMAL",
+    "power": 25,
+    "energyDelta": -33,
+    "durationMs": 3000,
+    "damageWindowStartMs": 2150,
+    "damageWindowEndMs": 2800
+  },
+  {
+    "id": "X_SCISSOR",
+    "displayId": "X_SCISSOR",
+    "type": "BUG",
+    "power": 45,
+    "energyDelta": -33,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1100,
+    "damageWindowEndMs": 1300
+  },
+  {
+    "id": "YAWN_FAST",
+    "displayId": "YAWN_FAST",
+    "type": "NORMAL",
+    "power": null,
+    "energyDelta": 13,
+    "durationMs": 1500,
+    "damageWindowStartMs": 1200,
+    "damageWindowEndMs": 1400
+  },
+  {
+    "id": "ZAP_CANNON",
+    "displayId": "ZAP_CANNON",
+    "type": "ELECTRIC",
+    "power": 140,
+    "energyDelta": -100,
+    "durationMs": 3500,
+    "damageWindowStartMs": 2800,
+    "damageWindowEndMs": 3300
+  },
+  {
+    "id": "ZEN_HEADBUTT_FAST",
+    "displayId": "ZEN_HEADBUTT_FAST",
+    "type": "PSYCHIC",
+    "power": 11,
+    "energyDelta": 9,
+    "durationMs": 1000,
+    "damageWindowStartMs": 750,
+    "damageWindowEndMs": 950
+  }
+]

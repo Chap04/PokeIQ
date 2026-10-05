@@ -1,0 +1,33 @@
+{
+  "TIER_1": {
+    "id": "TIER_1",
+    "name": "Tier 1",
+    "bossHp": 600,
+    "cpMultiplier": 0.5974,
+    "timerSeconds": 180
+  },
+
+  "TIER_3": {
+    "id": "TIER_3",
+    "name": "Tier 3",
+    "bossHp": 3600,
+    "cpMultiplier": 0.73,
+    "timerSeconds": 180
+  },
+
+  "TIER_5": {
+    "id": "TIER_5",
+    "name": "Tier 5 / Legendary",
+    "bossHp": 15000,
+    "cpMultiplier": 0.79,
+    "timerSeconds": 300
+  },
+
+  "MEGA": {
+    "id": "MEGA",
+    "name": "Standard Mega",
+    "bossHp": 9000,
+    "cpMultiplier": 0.79,
+    "timerSeconds": 300
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "PokeMiners Game Master",
+  "sourceUrl": "https://raw.githubusercontent.com/PokeMiners/game_masters/master/latest/latest.json",
+  "sourceTimestamp": "1787902550208",
+  "generatedAt": "2026-09-07T02:45:40.113Z",
+  "counts": {
+    "rawTemplates": 18812,
+    "pokemon": 1494,
+    "pokemonWithFamilyId": 1494,
+    "candyFamilies": 541,
+    "pveMoves": 403,
+    "evolutions": 583,
+    "formChanges": 40,
+    "moveReassignments": 17,
+    "suppressedPlayerFacingForms": 11,
+    "supplementalFusionMoves": 2,
+    "missingMoveReferences": 0
+  }
+}

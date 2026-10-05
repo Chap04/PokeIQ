@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "levelStep": 0.5,
+  "minimumLevel": 1,
+  "maximumLevel": 50,
+  "costs": [
+    { "minLevel": 1, "maxLevel": 2.5, "stardust": 200, "candy": 1, "candyXL": 0 },
+    { "minLevel": 3, "maxLevel": 4.5, "stardust": 400, "candy": 1, "candyXL": 0 },
+    { "minLevel": 5, "maxLevel": 6.5, "stardust": 600, "candy": 1, "candyXL": 0 },
+    { "minLevel": 7, "maxLevel": 8.5, "stardust": 800, "candy": 1, "candyXL": 0 },
+    { "minLevel": 9, "maxLevel": 10.5, "stardust": 1000, "candy": 1, "candyXL": 0 },
+
+    { "minLevel": 11, "maxLevel": 12.5, "stardust": 1300, "candy": 2, "candyXL": 0 },
+    { "minLevel": 13, "maxLevel": 14.5, "stardust": 1600, "candy": 2, "candyXL": 0 },
+    { "minLevel": 15, "maxLevel": 16.5, "stardust": 1900, "candy": 2, "candyXL": 0 },
+    { "minLevel": 17, "maxLevel": 18.5, "stardust": 2200, "candy": 2, "candyXL": 0 },
+    { "minLevel": 19, "maxLevel": 20.5, "stardust": 2500, "candy": 2, "candyXL": 0 },
+
+    { "minLevel": 21, "maxLevel": 22.5, "stardust": 3000, "candy": 3, "candyXL": 0 },
+    { "minLevel": 23, "maxLevel": 24.5, "stardust": 3500, "candy": 3, "candyXL": 0 },
+
+    { "minLevel": 25, "maxLevel": 25.5, "stardust": 4000, "candy": 3, "candyXL": 0 },
+    { "minLevel": 26, "maxLevel": 26.5, "stardust": 4000, "candy": 4, "candyXL": 0 },
+
+    { "minLevel": 27, "maxLevel": 28.5, "stardust": 4500, "candy": 4, "candyXL": 0 },
+    { "minLevel": 29, "maxLevel": 30.5, "stardust": 5000, "candy": 4, "candyXL": 0 },
+
+    { "minLevel": 31, "maxLevel": 32.5, "stardust": 6000, "candy": 6, "candyXL": 0 },
+    { "minLevel": 33, "maxLevel": 34.5, "stardust": 7000, "candy": 8, "candyXL": 0 },
+    { "minLevel": 35, "maxLevel": 36.5, "stardust": 8000, "candy": 10, "candyXL": 0 },
+    { "minLevel": 37, "maxLevel": 38.5, "stardust": 9000, "candy": 12, "candyXL": 0 },
+    { "minLevel": 39, "maxLevel": 39.5, "stardust": 10000, "candy": 15, "candyXL": 0 },
+
+    { "minLevel": 40, "maxLevel": 40.5, "stardust": 10000, "candy": 0, "candyXL": 10 },
+    { "minLevel": 41, "maxLevel": 41.5, "stardust": 11000, "candy": 0, "candyXL": 10 },
+    { "minLevel": 42, "maxLevel": 42.5, "stardust": 11000, "candy": 0, "candyXL": 12 },
+    { "minLevel": 43, "maxLevel": 43.5, "stardust": 12000, "candy": 0, "candyXL": 12 },
+    { "minLevel": 44, "maxLevel": 44.5, "stardust": 12000, "candy": 0, "candyXL": 15 },
+    { "minLevel": 45, "maxLevel": 45.5, "stardust": 13000, "candy": 0, "candyXL": 15 },
+    { "minLevel": 46, "maxLevel": 46.5, "stardust": 13000, "candy": 0, "candyXL": 17 },
+    { "minLevel": 47, "maxLevel": 47.5, "stardust": 14000, "candy": 0, "candyXL": 17 },
+    { "minLevel": 48, "maxLevel": 48.5, "stardust": 14000, "candy": 0, "candyXL": 20 },
+    { "minLevel": 49, "maxLevel": 49.5, "stardust": 15000, "candy": 0, "candyXL": 20 }
+  ],
+  "modifiers": {
+    "standard": {
+      "stardust": 1,
+      "candy": 1,
+      "candyXL": 1
+    },
+    "lucky": {
+      "stardust": 0.5,
+      "candy": 1,
+      "candyXL": 1
+    },
+    "shadow": {
+      "stardust": 1.2,
+      "candy": 1.2,
+      "candyXL": 1.2
+    },
+    "purified": {
+      "stardust": 0.9,
+      "candy": 0.9,
+      "candyXL": 0.9
+    }
+  },
+  "unsupportedSpecies": [
+    "ETERNATUS"
+  ]
+}
