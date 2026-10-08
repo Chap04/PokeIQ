@@ -1844,56 +1844,6 @@ function getMaximumPossibleCpForSpecies(
 }
 
 // --------------------------------------------------
-// CP observations
-// --------------------------------------------------
-
-function getCpObservation(
-  result
-) {
-  const cp =
-    result
-      ?.analysis
-      ?.cp
-
-  if (
-    !Number.isInteger(
-      cp?.value
-    )
-  ) {
-    return null
-  }
-
-  return {
-    value:
-      cp.value,
-
-    confidence:
-      Number.isFinite(
-        cp.confidence
-      )
-        ? cp.confidence
-        : 0,
-
-    internalAgreement:
-      cp.agreement ??
-      'unknown',
-
-    internalCount:
-      Number.isFinite(
-        cp.consensusCount
-      )
-        ? cp.consensusCount
-        : 0,
-
-    rawText:
-      cp.rawText ??
-      '',
-
-    result,
-  }
-}
-
-// --------------------------------------------------
 // V7U CP observation reliability
 // --------------------------------------------------
 
