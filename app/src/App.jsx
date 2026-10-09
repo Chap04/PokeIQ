@@ -88,6 +88,11 @@ import {
   loadCollection,
 } from './lib/collections'
 
+import {
+  getProfile,
+  saveProfile,
+} from './lib/profile'
+
 import { supabase } from './lib/supabase'
 
 console.log('Supabase connected:', supabase)
@@ -266,6 +271,9 @@ const [email, setEmail] =
 const [password, setPassword] =
   useState('')
 
+  const [displayName, setDisplayName] =
+  useState('')
+
 
   const [
     candyFamilyBalances,
@@ -435,13 +443,22 @@ const [password, setPassword] =
     async function initializeUser() {
       try {
         const user =
-          await getCurrentUser()
+  await getCurrentUser()
 
-        setCurrentUser(user)
+setCurrentUser(user)
 
-        if (!user) {
-          return
-        }
+if (!user) {
+  return
+}
+
+const profile =
+  await getProfile(user.id)
+
+if (profile) {
+  setDisplayName(
+    profile.display_name
+  )
+}
 
         const cloudCollection =
           await loadCollection(
@@ -661,33 +678,6 @@ const [password, setPassword] =
       projectIntelligence,
     ]
   )
-
-  useEffect(() => {
-  async function initializeUser() {
-    const user =
-      await getCurrentUser()
-
-    setCurrentUser(user)
-
-    if (!user) {
-      return
-    }
-
-    const cloudCollection =
-      await loadCollection(user.id)
-
-    if (
-      Array.isArray(cloudCollection) &&
-      cloudCollection.length > 0
-    ) {
-      setPokemonCollection(
-        cloudCollection
-      )
-    }
-  }
-
-  initializeUser()
-}, [])
 
 async function handleSignUp() {
   try {
@@ -1478,14 +1468,29 @@ async function handleLogout() {
 >
   {currentUser ? (
     <>
-      <span>
-  ☁️ Synced • 👤 {currentUser.email.split('@')[0]}
-</span>
+  <span>
+    ☁️ Synced • 👤 {displayName}
+  </span>
 
-      <button onClick={handleLogout}>
-        Sign Out
-      </button>
-    </>
+  <button
+    onClick={async () => {
+      await saveProfile(
+        currentUser.id,
+        'Carter'
+      )
+
+      console.log(
+        'Profile created'
+      )
+    }}
+  >
+    Create Profile
+  </button>
+
+  <button onClick={handleLogout}>
+    Sign Out
+  </button>
+</>
   ) : (
     <>
       <input
