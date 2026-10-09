@@ -256,6 +256,17 @@ function App() {
       }
     )
 
+    
+const [currentUser, setCurrentUser] =
+  useState(null)
+
+const [email, setEmail] =
+  useState('')
+
+const [password, setPassword] =
+  useState('')
+
+
   const [
     candyFamilyBalances,
     setCandyFamilyBalances,
@@ -420,18 +431,62 @@ function App() {
       ]
     )
 
-  const [currentUser, setCurrentUser] =
-  useState(null)
+  useEffect(() => {
+    async function initializeUser() {
+      try {
+        const user =
+          await getCurrentUser()
+
+        setCurrentUser(user)
+
+        if (!user) {
+          return
+        }
+
+        const cloudCollection =
+          await loadCollection(
+            user.id
+          )
+
+        if (
+          Array.isArray(
+            cloudCollection
+          ) &&
+          cloudCollection.length > 0
+        ) {
+          setPokemonCollection(
+            cloudCollection
+          )
+
+          console.log(
+            'Loaded collection from cloud'
+          )
+        }
+      } catch (error) {
+        console.error(error)
+      }
+    }
+
+    initializeUser()
+  }, [])
 
   useEffect(() => {
-  getCurrentUser().then(user => {
-    console.log('Current user:', user)
+    async function syncToCloud() {
+      if (!currentUser) {
+        return
+      }
 
-    if (user) {
-      console.log('User ID:', user.id)
+      await saveCollection(
+        currentUser.id,
+        pokemonCollection
+      )
     }
-  })
-}, [])
+
+    syncToCloud()
+  }, [
+    currentUser,
+    pokemonCollection,
+  ])
 
   useEffect(
     () => {
@@ -628,33 +683,60 @@ function App() {
       setPokemonCollection(
         cloudCollection
       )
-
-      console.log(
-        'Loaded collection from cloud'
-      )
     }
   }
 
   initializeUser()
 }, [])
 
-useEffect(() => {
-  async function syncToCloud() {
-    if (!currentUser) {
-      return
-    }
-
-    await saveCollection(
-      currentUser.id,
-      pokemonCollection
+async function handleSignUp() {
+  try {
+    await signUp(
+      email,
+      password
     )
-  }
 
-  syncToCloud()
-}, [
-  currentUser,
-  pokemonCollection,
-])
+    alert(
+      'Check your email for verification.'
+    )
+  } catch (error) {
+    console.error(error)
+    alert(error.message)
+  }
+}
+
+async function handleLogin() {
+  try {
+    const result =
+      await signIn(
+        email,
+        password
+      )
+
+    setCurrentUser(
+      result.user
+    )
+
+    alert('Logged in')
+  } catch (error) {
+    console.error(error)
+    alert(error.message)
+  }
+}
+
+async function handleLogout() {
+  try {
+    await signOut()
+
+    setCurrentUser(
+      null
+    )
+
+    alert('Logged out')
+  } catch (error) {
+    console.error(error)
+  }
+}
 
   function openPage(
     page
@@ -1385,6 +1467,55 @@ useEffect(() => {
           Imports
         </button>
       </nav>
+
+      <div
+  style={{
+    padding: '10px',
+    display: 'flex',
+    gap: '10px',
+    alignItems: 'center',
+  }}
+>
+  {currentUser ? (
+    <>
+      <span>
+  ☁️ Synced • 👤 {currentUser.email.split('@')[0]}
+</span>
+
+      <button onClick={handleLogout}>
+        Sign Out
+      </button>
+    </>
+  ) : (
+    <>
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={event =>
+          setEmail(event.target.value)
+        }
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={event =>
+          setPassword(event.target.value)
+        }
+      />
+
+      <button onClick={handleLogin}>
+        Login
+      </button>
+
+      <button onClick={handleSignUp}>
+        Sign Up
+      </button>
+    </>
+  )}
+</div>
 
       {currentPage ===
         'dashboard' && (

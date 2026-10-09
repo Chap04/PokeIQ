@@ -24,11 +24,16 @@ export async function saveCollection(
 ) {
   const { error } = await supabase
     .from('user_collections')
-    .upsert({
-      user_id: userId,
-      collection_data: collection,
-      updated_at: new Date().toISOString(),
-    })
+    .upsert(
+      {
+        user_id: userId,
+        collection_data: collection,
+        updated_at: new Date().toISOString(),
+      },
+      {
+        onConflict: 'user_id',
+      }
+    )
 
   if (error) {
     throw error
