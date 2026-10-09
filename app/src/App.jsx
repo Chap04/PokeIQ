@@ -76,6 +76,22 @@ import {
   createMessyCollectionScenario,
 } from './mock/developerScenarios.js'
 
+import {
+  signUp,
+  signIn,
+  signOut,
+  getCurrentUser,
+} from './lib/auth'
+
+import {
+  saveCollection,
+  loadCollection,
+} from './lib/collections'
+
+import { supabase } from './lib/supabase'
+
+console.log('Supabase connected:', supabase)
+
 const COLLECTION_STORAGE_KEY =
   'pokeiq-pokemon-collection'
 
@@ -403,6 +419,20 @@ function App() {
         excludedRaidRecommendationCollectionIds,
       ]
     )
+
+  const [currentUser, setCurrentUser] =
+  useState(null)
+
+  useEffect(() => {
+  getCurrentUser().then(user => {
+    console.log('Current user:', user)
+
+    if (user) {
+      console.log('User ID:', user.id)
+    }
+  })
+}, [])
+
   useEffect(
     () => {
       localStorage.setItem(
@@ -576,6 +606,55 @@ function App() {
       projectIntelligence,
     ]
   )
+
+  useEffect(() => {
+  async function initializeUser() {
+    const user =
+      await getCurrentUser()
+
+    setCurrentUser(user)
+
+    if (!user) {
+      return
+    }
+
+    const cloudCollection =
+      await loadCollection(user.id)
+
+    if (
+      Array.isArray(cloudCollection) &&
+      cloudCollection.length > 0
+    ) {
+      setPokemonCollection(
+        cloudCollection
+      )
+
+      console.log(
+        'Loaded collection from cloud'
+      )
+    }
+  }
+
+  initializeUser()
+}, [])
+
+useEffect(() => {
+  async function syncToCloud() {
+    if (!currentUser) {
+      return
+    }
+
+    await saveCollection(
+      currentUser.id,
+      pokemonCollection
+    )
+  }
+
+  syncToCloud()
+}, [
+  currentUser,
+  pokemonCollection,
+])
 
   function openPage(
     page
@@ -1233,8 +1312,8 @@ function App() {
         >
           Projects
           {activeProjectCount > 0
-            ? ` (${activeProjectCount})`
-            : ''}
+  ? ' (' + activeProjectCount + ')'
+  : ''}
         </button>
 
         <button
@@ -1331,7 +1410,7 @@ function App() {
         />
       )}
 
-                  {currentPage ===
+      {currentPage ===
         'raid-profile' && (
         <RaidProfile
           raidTypeProfile={
