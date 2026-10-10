@@ -100,6 +100,16 @@ import {
 
 import { supabase } from './lib/supabase'
 
+import {
+  saveResources,
+  loadResources,
+} from './lib/resources'
+
+import {
+  saveCandyBalances,
+  loadCandyBalances,
+} from './lib/candyBalances'
+
 import Account from './pages/Account.jsx'
 
 console.log('Supabase connected:', supabase)
@@ -280,6 +290,16 @@ const [password, setPassword] =
 
   const [displayName, setDisplayName] =
   useState('')
+  
+  const [
+  memberSince,
+  setMemberSince,
+] = useState(null)
+
+  const [
+  lastSyncTime,
+  setLastSyncTime,
+] = useState(null)
 
   const [
   editableDisplayName,
@@ -479,6 +499,10 @@ if (profile) {
   setEditableDisplayName(
     profile.display_name
   )
+
+  setMemberSince(
+    profile.created_at
+  )
 }
 
         const cloudCollection =
@@ -490,6 +514,30 @@ if (profile) {
   await loadProjects(
     user.id
   )
+
+  const cloudResources =
+  await loadResources(user.id)
+
+if (cloudResources) {
+  setPlayerResources(
+    cloudResources
+  )
+}
+
+const cloudCandyBalances =
+  await loadCandyBalances(
+    user.id
+  )
+
+if (cloudCandyBalances) {
+  setCandyFamilyBalances(
+    cloudCandyBalances
+  )
+
+  console.log(
+    'Loaded candy balances from cloud'
+  )
+}
 
 if (
   Array.isArray(
@@ -542,6 +590,20 @@ if (
       currentUser.id,
       projects
     )
+
+    await saveResources(
+  currentUser.id,
+  playerResources
+)
+
+await saveCandyBalances(
+  currentUser.id,
+  candyFamilyBalances
+)
+
+setLastSyncTime(
+  new Date().toLocaleString()
+)
   }
 
   syncToCloud()
@@ -549,6 +611,8 @@ if (
   currentUser,
   pokemonCollection,
   projects,
+  playerResources,
+  candyFamilyBalances,
 ])
 
   useEffect(
@@ -767,6 +831,10 @@ if (profile) {
     profile.display_name
   )
 }
+
+setMemberSince(
+  profile.created_at
+)
 
     alert('Logged in')
   } catch (error) {
@@ -1377,15 +1445,95 @@ async function handleLogout() {
       'recording-lab'
 
   const activeProjectCount =
-    projectIntelligence
-      ?.projectCount ??
-    0
+  projects.filter(
+    project =>
+      project?.status !==
+      PROJECT_STATUS.ABANDONED
+  ).length
 
+  console.log(
+  'Projects:',
+  projects
+)
 
-    const avatarLetter =
-  displayName
-    ?.charAt(0)
-    ?.toUpperCase() || 'T'
+console.log(
+  'Project Intelligence:',
+  projectIntelligence
+)
+
+console.log(
+  'Active Project Count:',
+  activeProjectCount
+)
+
+    const trainerIntelligence =
+    useMemo(() => {
+      const warnings = []
+
+      let recommendation =
+  'Continue progressing your active projects.'
+
+      if (activeProjectCount > 3) {
+  warnings.push(
+    'You have several active projects.'
+  )
+
+  recommendation =
+    'Focus on completing active projects before starting new ones.'
+}
+
+      if (
+  playerResources.stardust &&
+  playerResources.stardust < 100000
+) {
+  warnings.push(
+    'Low Stardust reserves.'
+  )
+
+  recommendation =
+    'Prioritize Stardust farming before making major investments.'
+}
+
+      if (
+  pokemonCollection.length === 0
+) {
+  warnings.push(
+    'Build your collection to unlock recommendations.'
+  )
+
+  recommendation =
+    'Import or add Pokémon to unlock raid analysis.'
+}
+
+      return {
+  status:
+    warnings.length === 0
+      ? 'Healthy'
+      : 'Needs Attention',
+
+  warnings,
+
+  recommendation,
+
+  projectCount:
+    activeProjectCount,
+
+  pokemonCount:
+    pokemonCollection.length,
+}
+
+    }, [
+      activeProjectCount,
+      playerResources,
+      pokemonCollection,
+    ])
+
+  const avatarLetter =
+    displayName
+      ?.charAt(0)
+      ?.toUpperCase() || 'T'
+
+      
 
   return (
     <>
@@ -1643,6 +1791,9 @@ async function handleLogout() {
           onUpdateCandyFamilyBalance={
             updateCandyFamilyBalance
           }
+          trainerIntelligence={
+  trainerIntelligence
+}
         />
       )}
 
@@ -1844,50 +1995,34 @@ async function handleLogout() {
       )}
 
       {currentPage === 'account' && (
-  <Account
-    currentUser={currentUser}
-    displayName={displayName}
-    editableDisplayName={
-      editableDisplayName
-    }
-    setEditableDisplayName={
-      setEditableDisplayName
-    }
-    setDisplayName={
-      setDisplayName
-    }
-    pokemonCount={
-      pokemonCollection.length
-    }
-    projectCount={
-      activeProjectCount
-    }
-    currentUserId={
-      currentUser?.id
-    }
-    onLogout={handleLogout}
-  />
-)}
-
-      {currentPage ===
-        'vision-lab' && (
-        <VisionLab
-          onBack={
-            returnToDeveloperTools
-          }
+        <Account
+          currentUser={currentUser}
+          displayName={displayName}
+          editableDisplayName={editableDisplayName}
+          setEditableDisplayName={setEditableDisplayName}
+          setDisplayName={setDisplayName}
+          memberSince={memberSince}
+          pokemonCount={pokemonCollection.length}
+          projectCount={activeProjectCount}
+          currentUserId={currentUser?.id}
+          lastSyncTime={lastSyncTime}
+          onLogout={handleLogout}
         />
       )}
 
-      {currentPage ===
-        'recording-lab' && (
+      {currentPage === 'vision-lab' && (
+        <VisionLab
+          onBack={returnToDeveloperTools}
+        />
+      )}
+
+      {currentPage === 'recording-lab' && (
         <RecordingLab
-          onBack={
-            returnToDeveloperTools
-          }
+          onBack={returnToDeveloperTools}
         />
       )}
     </>
   )
 }
 
-export default App
+export default App;

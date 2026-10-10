@@ -9,8 +9,10 @@ function Account({
   editableDisplayName,
   setEditableDisplayName,
   setDisplayName,
+  memberSince,
   pokemonCount,
   projectCount,
+  lastSyncTime,
   onLogout,
 }) {
   if (!currentUser) {
@@ -146,6 +148,33 @@ function Account({
           automatically backed up to
           the cloud.
         </p>
+
+        <p>
+          {lastSyncTime
+            ? new Date(lastSyncTime).toLocaleString(undefined, {
+                dateStyle: 'medium',
+                timeStyle: 'short',
+              })
+            : 'Not synced yet'}
+        </p>
+
+        <h3>Member Since</h3>
+
+<p>
+  {
+  memberSince
+    ? `Trainer since ${new Date(
+        memberSince
+      ).toLocaleDateString(
+        undefined,
+        {
+          year: 'numeric',
+          month: 'long',
+        }
+      )}`
+    : 'Unknown'
+}
+</p>
 
         <hr />
 

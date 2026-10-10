@@ -408,6 +408,7 @@ function Dashboard({
   projects = [],
   onAddProject,
   onUpdateCandyFamilyBalance,
+  trainerIntelligence,
 }) {
   const baseRaidDashboard =
     useMemo(
@@ -1214,6 +1215,19 @@ function Dashboard({
     potentialEvolutionInvestments
       .length > 0
 
+      console.log(
+  'Dashboard counts',
+  {
+    pokemonCollection:
+      pokemonCollection.length,
+
+    projects:
+      projects.length,
+
+    trainerIntelligence,
+  }
+)
+
   return (
     <main className="app">
       <header className="header dashboard-hero">
@@ -1231,6 +1245,84 @@ function Dashboard({
           in your collection right now.
         </p>
       </header>
+
+      <section className="section">
+        <div className="card opportunity-card">
+          <h2>
+            🧠 Trainer Intelligence
+          </h2>
+
+          <div className="meta-row">
+            <span>
+              Account Health
+            </span>
+
+            <strong>
+              {
+                trainerIntelligence?.status ??
+                'Healthy'
+              }
+            </strong>
+          </div>
+
+          <div className="meta-row">
+            <span>
+              Active Projects
+            </span>
+
+            <strong>
+              {
+                trainerIntelligence?.projectCount ??
+                0
+              }
+            </strong>
+          </div>
+
+          <div className="meta-row">
+            <span>
+              Collection Size
+            </span>
+
+            <strong>
+              {
+                trainerIntelligence?.pokemonCount ??
+                0
+              }
+            </strong>
+          </div>
+
+          <hr />
+
+          <hr />
+
+{(
+  trainerIntelligence?.warnings ??
+  []
+).length > 0 && (
+  <>
+    {trainerIntelligence.warnings.map(
+      warning => (
+        <p key={warning}>
+          • {warning}
+        </p>
+      )
+    )}
+
+    <hr />
+  </>
+)}
+
+          <p>
+            <strong>
+              NEXT BEST ACTION:
+            </strong>
+          </p>
+
+          <p>
+            {trainerIntelligence?.recommendation ?? 'No recommendation available.'}
+          </p>
+        </div>
+      </section>
 
       <section className="section dashboard-recommendations-section">
         <div className="section-header dashboard-section-header">
