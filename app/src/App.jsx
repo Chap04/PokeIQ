@@ -2015,6 +2015,10 @@ async function handleLogout() {
           projectCount={activeProjectCount}
           currentUserId={currentUser?.id}
           lastSyncTime={lastSyncTime}
+          pokemonCollection={pokemonCollection}
+projects={projects}
+playerResources={playerResources}
+candyFamilyBalances={candyFamilyBalances}
           onLogout={handleLogout}
         />
       )}

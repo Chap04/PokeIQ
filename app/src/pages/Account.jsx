@@ -13,6 +13,10 @@ function Account({
   pokemonCount,
   projectCount,
   lastSyncTime,
+  pokemonCollection,
+  projects,
+  playerResources,
+  candyFamilyBalances,
   onLogout,
 }) {
   if (!currentUser) {
@@ -37,6 +41,56 @@ function Account({
     displayName
       ?.charAt(0)
       ?.toUpperCase() || 'T'
+
+      function exportBackup() {
+  const backup = {
+    exportedAt:
+      new Date().toISOString(),
+
+    pokemonCollection,
+
+    projects,
+
+    playerResources,
+
+    candyFamilyBalances,
+  }
+
+  const blob = new Blob(
+    [
+      JSON.stringify(
+        backup,
+        null,
+        2
+      ),
+    ],
+    {
+      type:
+        'application/json',
+    }
+  )
+
+  const url =
+    URL.createObjectURL(
+      blob
+    )
+
+  const link =
+    document.createElement(
+      'a'
+    )
+
+  link.href = url
+
+  link.download =
+    'pokeiq-backup.json'
+
+  link.click()
+
+  URL.revokeObjectURL(
+    url
+  )
+}
 
   return (
     <div
@@ -212,18 +266,30 @@ function Account({
 
         <hr />
 
-        <button
-          onClick={onLogout}
-          style={{
-            marginTop: '20px',
-            padding:
-              '12px 24px',
-            borderRadius: '8px',
-            cursor: 'pointer',
-          }}
-        >
-          Sign Out
-        </button>
+<button
+  onClick={exportBackup}
+  style={{
+    marginTop: '20px',
+    marginRight: '10px',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    cursor: 'pointer',
+  }}
+>
+  Export Backup
+</button>
+
+<button
+  onClick={onLogout}
+  style={{
+    marginTop: '20px',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    cursor: 'pointer',
+  }}
+>
+  Sign Out
+</button>
       </div>
     </div>
   )
