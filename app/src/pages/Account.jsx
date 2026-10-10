@@ -2,8 +2,12 @@ import {
   saveProfile,
 } from '../lib/profile'
 
+import { supabase }
+  from '../lib/supabase'
+
 import {
   useRef,
+  useState,
 } from 'react'
 
 function Account({
@@ -52,6 +56,11 @@ setCandyFamilyBalances,
 
       const restoreFileInputRef =
   useRef(null)
+
+  const [
+  newPassword,
+  setNewPassword,
+] = useState('')
 
       function exportBackup() {
   const backup = {
@@ -170,6 +179,28 @@ setCandyFamilyBalances,
   reader.readAsText(
     file
   )
+}
+
+async function updatePassword() {
+  try {
+    const { error } =
+      await supabase.auth.updateUser({
+        password:
+          newPassword,
+      })
+
+    if (error) {
+      throw error
+    }
+
+    alert(
+      'Password updated successfully.'
+    )
+
+    setNewPassword('')
+  } catch (error) {
+    alert(error.message)
+  }
 }
 
 const actionButtonStyle = {
@@ -293,6 +324,42 @@ const actionButtonStyle = {
         <h3>Email</h3>
 
         <p>{currentUser?.email}</p>
+
+        <hr />
+
+<h3>
+  Change Password
+</h3>
+
+<input
+  type="password"
+  placeholder="New Password"
+  value={newPassword}
+  onChange={event =>
+    setNewPassword(
+      event.target.value
+    )
+  }
+  style={{
+    width: '250px',
+    padding: '10px',
+    borderRadius: '8px',
+    marginBottom: '10px',
+  }}
+/>
+
+<br />
+
+<button
+  onClick={updatePassword}
+  style={{
+    padding: '10px 20px',
+    borderRadius: '8px',
+    cursor: 'pointer',
+  }}
+>
+  Update Password
+</button>
 
         <hr />
 

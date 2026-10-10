@@ -811,6 +811,39 @@ async function handleSignUp() {
   }
 }
 
+async function handleForgotPassword() {
+  if (!email) {
+    alert(
+      'Enter your email address first.'
+    )
+
+    return
+  }
+
+  try {
+    const { error } =
+      await supabase.auth.resetPasswordForEmail(
+        email,
+        {
+          redirectTo:
+            window.location.origin,
+        }
+      )
+
+    if (error) {
+      throw error
+    }
+
+    alert(
+      'Password reset email sent.'
+    )
+  } catch (error) {
+    console.error(error)
+
+    alert(error.message)
+  }
+}
+
 async function handleLogin() {
   try {
     const result =
@@ -1821,6 +1854,13 @@ return (
   style={authButtonStyle}
 >
   Sign Up
+</button>
+
+<button
+  onClick={handleForgotPassword}
+  style={authButtonStyle}
+>
+  Forgot Password
 </button>
         </div>
       )}
