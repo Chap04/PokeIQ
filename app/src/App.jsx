@@ -1,6 +1,7 @@
 import {
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from 'react'
 
@@ -858,6 +859,12 @@ async function handleLogout() {
 
     setEditableDisplayName('')
 
+    setMemberSince(null)
+
+    setCurrentPage(
+      'dashboard'
+    )
+
     alert('Logged out')
   } catch (error) {
     console.error(error)
@@ -865,25 +872,36 @@ async function handleLogout() {
 }
 
   function openPage(
-    page
+  page
+) {
+  if (
+    !currentUser &&
+    page !== 'dashboard'
   ) {
-    setEditingPokemon(
+    alert(
+      'Please log in to access trainer data.'
+    )
+
+    return
+  }
+
+  setEditingPokemon(
+    null
+  )
+
+  if (
+    page !==
+    'import-review'
+  ) {
+    setPendingImport(
       null
     )
-
-    if (
-      page !==
-      'import-review'
-    ) {
-      setPendingImport(
-        null
-      )
-    }
-
-    setCurrentPage(
-      page
-    )
   }
+
+  setCurrentPage(
+    page
+  )
+}
 
   function openManualEntry(
     pokemon = null
@@ -1526,7 +1544,24 @@ const showDeveloperTools =
       ?.charAt(0)
       ?.toUpperCase() || 'T'
 
-      if (isLoading) {
+const authControlStyle = {
+  padding: '10px 14px',
+  borderRadius: '8px',
+  border: '1px solid #2a3347',
+  backgroundColor: '#101827',
+  color: 'white',
+}
+
+const authButtonStyle = {
+  padding: '10px 18px',
+  borderRadius: '8px',
+  border: '1px solid #3b4b6b',
+  backgroundColor: '#2a3347',
+  color: 'white',
+  cursor: 'pointer',
+}
+
+if (isLoading) {
   return (
     <div
       style={{
@@ -1545,11 +1580,9 @@ const showDeveloperTools =
   )
 }
 
-      
-
-  return (
-    <>
-      <nav className="main-nav">
+return (
+  <>
+    <nav className="main-nav">
         <button
           className={
             currentPage ===
@@ -1757,59 +1790,84 @@ const showDeveloperTools =
           }}
         >
           <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={event =>
-              setEmail(event.target.value)
-            }
-          />
+  type="email"
+  placeholder="Email"
+  value={email}
+  onChange={event =>
+    setEmail(event.target.value)
+  }
+  style={authControlStyle}
+/>
 
           <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={event =>
-              setPassword(event.target.value)
-            }
-          />
+  type="password"
+  placeholder="Password"
+  value={password}
+  onChange={event =>
+    setPassword(event.target.value)
+  }
+  style={authControlStyle}
+/>
 
-          <button onClick={handleLogin}>
-            Login
-          </button>
+          <button
+  onClick={handleLogin}
+  style={authButtonStyle}
+>
+  Login
+</button>
 
-          <button onClick={handleSignUp}>
-            Sign Up
-          </button>
+         <button
+  onClick={handleSignUp}
+  style={authButtonStyle}
+>
+  Sign Up
+</button>
         </div>
       )}
 
       {currentPage ===
-        'dashboard' && (
-        <Dashboard
-          pokemonCollection={
-            pokemonCollection
-          }
-          playerResources={
-            playerResources
-          }
-          candyFamilyBalances={
-            candyFamilyBalances
-          }
-          projects={
-            projects
-          }
-          onAddProject={
-            addRaidRecommendationProject
-          }
-          onUpdateCandyFamilyBalance={
-            updateCandyFamilyBalance
-          }
-          trainerIntelligence={
-  trainerIntelligence
-}
-        />
-      )}
+  'dashboard' && (
+  currentUser ? (
+    <Dashboard
+      pokemonCollection={
+        pokemonCollection
+      }
+      playerResources={
+        playerResources
+      }
+      candyFamilyBalances={
+        candyFamilyBalances
+      }
+      projects={
+        projects
+      }
+      onAddProject={
+        addRaidRecommendationProject
+      }
+      onUpdateCandyFamilyBalance={
+        updateCandyFamilyBalance
+      }
+      trainerIntelligence={
+        trainerIntelligence
+      }
+    />
+  ) : (
+    <div
+      style={{
+        textAlign: 'center',
+        padding: '60px',
+      }}
+    >
+      <h1>Welcome to PokeIQ</h1>
+
+      <p>
+        Sign in to access your trainer
+        data, projects, raid analysis,
+        and recommendations.
+      </p>
+    </div>
+  )
+)}
 
       {currentPage ===
         'raid-profile' && (

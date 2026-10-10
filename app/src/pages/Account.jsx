@@ -2,6 +2,10 @@ import {
   saveProfile,
 } from '../lib/profile'
 
+import {
+  useRef,
+} from 'react'
+
 function Account({
   currentUser,
   currentUserId,
@@ -45,6 +49,9 @@ setCandyFamilyBalances,
     displayName
       ?.charAt(0)
       ?.toUpperCase() || 'T'
+
+      const restoreFileInputRef =
+  useRef(null)
 
       function exportBackup() {
   const backup = {
@@ -99,6 +106,8 @@ setCandyFamilyBalances,
 
 
   function restoreBackup(
+
+    
   event
 ) {
   const file =
@@ -384,11 +393,23 @@ const actionButtonStyle = {
 </button>
 
 <button
-  onClick={restoreBackup}
+  onClick={() =>
+    restoreFileInputRef.current?.click()
+  }
   style={actionButtonStyle}
 >
   Restore Backup
 </button>
+
+<input
+  ref={restoreFileInputRef}
+  type="file"
+  accept=".json"
+  onChange={restoreBackup}
+  style={{
+    display: 'none',
+  }}
+/>
 
 <button
   onClick={() =>
