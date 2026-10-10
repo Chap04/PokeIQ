@@ -1442,12 +1442,15 @@ async function handleLogout() {
   }
 
   const developerPageActive =
-    currentPage ===
-      'developer' ||
-    currentPage ===
-      'vision-lab' ||
-    currentPage ===
-      'recording-lab'
+  currentPage ===
+    'developer' ||
+  currentPage ===
+    'vision-lab' ||
+  currentPage ===
+    'recording-lab'
+
+const showDeveloperTools =
+  import.meta.env.DEV
 
   const activeProjectCount =
   projects.filter(
@@ -1614,20 +1617,22 @@ async function handleLogout() {
   : ''}
         </button>
 
-        <button
-          className={
-            developerPageActive
-              ? 'nav-button active'
-              : 'nav-button'
-          }
-          onClick={() =>
-            openPage(
-              'developer'
-            )
-          }
-        >
-          Developer
-        </button>
+        {showDeveloperTools && (
+  <button
+    className={
+      developerPageActive
+        ? 'nav-button active'
+        : 'nav-button'
+    }
+    onClick={() =>
+      openPage(
+        'developer'
+      )
+    }
+  >
+    Developer
+  </button>
+)}
 
         <button
           className={

@@ -163,6 +163,17 @@ setCandyFamilyBalances,
   )
 }
 
+const actionButtonStyle = {
+  marginTop: '20px',
+  marginRight: '10px',
+  padding: '12px 24px',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  backgroundColor: '#2a3347',
+  color: 'white',
+  border: '1px solid #3b4b6b',
+}
+
   return (
     <div
       style={{
@@ -230,6 +241,16 @@ setCandyFamilyBalances,
   }}
 />
 
+<p
+  style={{
+    color: '#718096',
+    fontSize: '14px',
+    marginTop: '4px',
+  }}
+>
+  PokeIQ Closed Beta v0.9.1
+</p>
+
 <br />
 
 <button
@@ -282,6 +303,24 @@ setCandyFamilyBalances,
               })
             : 'Not synced yet'}
         </p>
+
+        <hr />
+
+<h3>
+  Closed Beta Notes
+</h3>
+
+<p>
+  • Features may change during testing.
+</p>
+
+<p>
+  • Export backups are recommended.
+</p>
+
+<p>
+  • Please report any bugs or strange behavior.
+</p>
 
         <h3>Member Since</h3>
 
@@ -339,56 +378,31 @@ setCandyFamilyBalances,
 
 <button
   onClick={exportBackup}
-  style={{
-    marginTop: '20px',
-    marginRight: '10px',
-    padding: '12px 24px',
-    borderRadius: '8px',
-    cursor: 'pointer',
-  }}
+  style={actionButtonStyle}
 >
   Export Backup
 </button>
 
-<label
-  style={{
-    marginRight: '10px',
-  }}
->
-  <input
-    type="file"
-    accept=".json"
-    onChange={
-      restoreBackup
-    }
-    style={{
-      display: 'none',
-    }}
-  />
-
-  <span
-  style={{
-    display: 'inline-block',
-    padding: '12px 24px',
-    borderRadius: '8px',
-    cursor: 'pointer',
-    backgroundColor: '#2a3347',
-    color: 'white',
-    border: '1px solid #555',
-  }}
+<button
+  onClick={restoreBackup}
+  style={actionButtonStyle}
 >
   Restore Backup
-</span>
-</label>
+</button>
+
+<button
+  onClick={() =>
+    window.location.href =
+      'mailto:carterchapmanepicgames@yahoo.com?subject=PokeIQ Beta Feedback'
+  }
+  style={actionButtonStyle}
+>
+  Send Feedback
+</button>
 
 <button
   onClick={onLogout}
-  style={{
-    marginTop: '20px',
-    padding: '12px 24px',
-    borderRadius: '8px',
-    cursor: 'pointer',
-  }}
+  style={actionButtonStyle}
 >
   Sign Out
 </button>
