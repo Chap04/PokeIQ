@@ -95,6 +95,8 @@ import {
 
 import { supabase } from './lib/supabase'
 
+import Account from './pages/Account.jsx'
+
 console.log('Supabase connected:', supabase)
 
 const COLLECTION_STORAGE_KEY =
@@ -274,6 +276,16 @@ const [password, setPassword] =
   const [displayName, setDisplayName] =
   useState('')
 
+  const [
+  editableDisplayName,
+  setEditableDisplayName,
+] = useState(displayName)
+
+useEffect(() => {
+  setEditableDisplayName(
+    displayName
+  )
+}, [displayName])
 
   const [
     candyFamilyBalances,
@@ -456,6 +468,10 @@ const profile =
 
 if (profile) {
   setDisplayName(
+    profile.display_name
+  )
+
+  setEditableDisplayName(
     profile.display_name
   )
 }
@@ -706,6 +722,21 @@ async function handleLogin() {
     setCurrentUser(
       result.user
     )
+
+    const profile =
+  await getProfile(
+    result.user.id
+  )
+
+if (profile) {
+  setDisplayName(
+    profile.display_name
+  )
+
+  setEditableDisplayName(
+    profile.display_name
+  )
+}
 
     alert('Logged in')
   } catch (error) {
@@ -1456,71 +1487,83 @@ async function handleLogout() {
         >
           Imports
         </button>
+
+        <button
+  className={
+    currentPage === 'account'
+      ? 'nav-button active'
+      : 'nav-button'
+  }
+  onClick={() =>
+    openPage('account')
+  }
+>
+  Account
+</button>
       </nav>
 
-      <div
+      {currentUser ? (
+        <div
+          style={{
+            padding: '10px',
+            display: 'flex',
+            gap: '10px',
+            alignItems: 'center',
+          }}
+        >
+          <button
+  onClick={() =>
+    openPage('account')
+  }
   style={{
-    padding: '10px',
-    display: 'flex',
-    gap: '10px',
-    alignItems: 'center',
+    background: 'none',
+    border: 'none',
+    color: 'inherit',
+    cursor: 'pointer',
+    fontSize: 'inherit',
+    padding: 0,
   }}
 >
-  {currentUser ? (
-    <>
-  <span>
-    ☁️ Synced • 👤 {displayName}
-  </span>
+  👤 {displayName}
+</button>
 
-  <button
-    onClick={async () => {
-      await saveProfile(
-        currentUser.id,
-        'Carter'
-      )
+        </div>
+      ) : (
+        <div
+          style={{
+            padding: '10px',
+            display: 'flex',
+            gap: '10px',
+            alignItems: 'center',
+          }}
+        >
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={event =>
+              setEmail(event.target.value)
+            }
+          />
 
-      console.log(
-        'Profile created'
-      )
-    }}
-  >
-    Create Profile
-  </button>
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={event =>
+              setPassword(event.target.value)
+            }
+          />
 
-  <button onClick={handleLogout}>
-    Sign Out
-  </button>
-</>
-  ) : (
-    <>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={event =>
-          setEmail(event.target.value)
-        }
-      />
+          <button onClick={handleLogin}>
+            Login
+          </button>
 
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={event =>
-          setPassword(event.target.value)
-        }
-      />
-
-      <button onClick={handleLogin}>
-        Login
-      </button>
-
-      <button onClick={handleSignUp}>
-        Sign Up
-      </button>
-    </>
-  )}
-</div>
+          <button onClick={handleSignUp}>
+            Sign Up
+          </button>
+        </div>
+      )}
 
       {currentPage ===
         'dashboard' && (
@@ -1742,6 +1785,30 @@ async function handleLogout() {
           }
         />
       )}
+
+      <Account
+  currentUser={currentUser}
+  displayName={displayName}
+  editableDisplayName={
+    editableDisplayName
+  }
+  setEditableDisplayName={
+    setEditableDisplayName
+  }
+  setDisplayName={
+    setDisplayName
+  }
+  pokemonCount={
+    pokemonCollection.length
+  }
+  projectCount={
+    activeProjectCount
+  }
+  currentUserId={
+    currentUser?.id
+  }
+  onLogout={handleLogout}
+/>
 
       {currentPage ===
         'vision-lab' && (
