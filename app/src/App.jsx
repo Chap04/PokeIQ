@@ -89,6 +89,11 @@ import {
 } from './lib/collections'
 
 import {
+  saveProjects,
+  loadProjects,
+} from './lib/projects'
+
+import {
   getProfile,
   saveProfile,
 } from './lib/profile'
@@ -481,6 +486,25 @@ if (profile) {
             user.id
           )
 
+          const cloudProjects =
+  await loadProjects(
+    user.id
+  )
+
+if (
+  Array.isArray(
+    cloudProjects
+  )
+) {
+  setProjects(
+    cloudProjects
+  )
+
+  console.log(
+    'Loaded projects from cloud'
+  )
+}
+
         if (
           Array.isArray(
             cloudCollection
@@ -504,22 +528,28 @@ if (profile) {
   }, [])
 
   useEffect(() => {
-    async function syncToCloud() {
-      if (!currentUser) {
-        return
-      }
-
-      await saveCollection(
-        currentUser.id,
-        pokemonCollection
-      )
+  async function syncToCloud() {
+    if (!currentUser) {
+      return
     }
 
-    syncToCloud()
-  }, [
-    currentUser,
-    pokemonCollection,
-  ])
+    await saveCollection(
+      currentUser.id,
+      pokemonCollection
+    )
+
+    await saveProjects(
+      currentUser.id,
+      projects
+    )
+  }
+
+  syncToCloud()
+}, [
+  currentUser,
+  pokemonCollection,
+  projects,
+])
 
   useEffect(
     () => {
@@ -1349,6 +1379,12 @@ async function handleLogout() {
       ?.projectCount ??
     0
 
+
+    const avatarLetter =
+  displayName
+    ?.charAt(0)
+    ?.toUpperCase() || 'T'
+
   return (
     <>
       <nav className="main-nav">
@@ -1516,6 +1552,9 @@ async function handleLogout() {
     openPage('account')
   }
   style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
     background: 'none',
     border: 'none',
     color: 'inherit',
@@ -1524,7 +1563,23 @@ async function handleLogout() {
     padding: 0,
   }}
 >
-  👤 {displayName}
+  <div
+    style={{
+      width: '32px',
+      height: '32px',
+      borderRadius: '50%',
+      background: '#6d4aff',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      color: 'white',
+    }}
+  >
+    {avatarLetter}
+  </div>
+
+  <span>{displayName}</span>
 </button>
 
         </div>
@@ -1786,29 +1841,31 @@ async function handleLogout() {
         />
       )}
 
-      <Account
-  currentUser={currentUser}
-  displayName={displayName}
-  editableDisplayName={
-    editableDisplayName
-  }
-  setEditableDisplayName={
-    setEditableDisplayName
-  }
-  setDisplayName={
-    setDisplayName
-  }
-  pokemonCount={
-    pokemonCollection.length
-  }
-  projectCount={
-    activeProjectCount
-  }
-  currentUserId={
-    currentUser?.id
-  }
-  onLogout={handleLogout}
-/>
+      {currentPage === 'account' && (
+  <Account
+    currentUser={currentUser}
+    displayName={displayName}
+    editableDisplayName={
+      editableDisplayName
+    }
+    setEditableDisplayName={
+      setEditableDisplayName
+    }
+    setDisplayName={
+      setDisplayName
+    }
+    pokemonCount={
+      pokemonCollection.length
+    }
+    projectCount={
+      activeProjectCount
+    }
+    currentUserId={
+      currentUser?.id
+    }
+    onLogout={handleLogout}
+  />
+)}
 
       {currentPage ===
         'vision-lab' && (

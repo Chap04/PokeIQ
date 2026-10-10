@@ -13,6 +13,12 @@ function Account({
   projectCount,
   onLogout,
 }) {
+
+    const avatarLetter =
+  displayName
+    ?.charAt(0)
+    ?.toUpperCase() || 'T'
+    
   return (
     <div
       style={{
