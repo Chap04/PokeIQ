@@ -2019,6 +2019,10 @@ async function handleLogout() {
 projects={projects}
 playerResources={playerResources}
 candyFamilyBalances={candyFamilyBalances}
+setPokemonCollection={setPokemonCollection}
+  setProjects={setProjects}
+  setPlayerResources={setPlayerResources}
+  setCandyFamilyBalances={setCandyFamilyBalances}
           onLogout={handleLogout}
         />
       )}

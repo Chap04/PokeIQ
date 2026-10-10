@@ -17,6 +17,10 @@ function Account({
   projects,
   playerResources,
   candyFamilyBalances,
+  setPokemonCollection,
+setProjects,
+setPlayerResources,
+setCandyFamilyBalances,
   onLogout,
 }) {
   if (!currentUser) {
@@ -56,6 +60,7 @@ function Account({
     candyFamilyBalances,
   }
 
+
   const blob = new Blob(
     [
       JSON.stringify(
@@ -89,6 +94,72 @@ function Account({
 
   URL.revokeObjectURL(
     url
+  )
+}
+
+
+  function restoreBackup(
+  event
+) {
+  const file =
+    event.target.files?.[0]
+
+  if (!file) {
+    return
+  }
+
+  const reader =
+    new FileReader()
+
+  reader.onload = (
+    loadEvent
+  ) => {
+    try {
+      const backup =
+        JSON.parse(
+          loadEvent.target.result
+        )
+
+      if (
+        !window.confirm(
+          'This will replace your current collection, projects, resources, and candy balances. Continue?'
+        )
+      ) {
+        return
+      }
+
+      setPokemonCollection(
+        backup.pokemonCollection ??
+          []
+      )
+
+      setProjects(
+        backup.projects ??
+          []
+      )
+
+      setPlayerResources(
+        backup.playerResources ??
+          {}
+      )
+
+      setCandyFamilyBalances(
+        backup.candyFamilyBalances ??
+          {}
+      )
+
+      alert(
+        'Backup restored successfully.'
+      )
+    } catch {
+      alert(
+        'Invalid backup file.'
+      )
+    }
+  }
+
+  reader.readAsText(
+    file
   )
 }
 
@@ -278,6 +349,37 @@ function Account({
 >
   Export Backup
 </button>
+
+<label
+  style={{
+    marginRight: '10px',
+  }}
+>
+  <input
+    type="file"
+    accept=".json"
+    onChange={
+      restoreBackup
+    }
+    style={{
+      display: 'none',
+    }}
+  />
+
+  <span
+  style={{
+    display: 'inline-block',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    backgroundColor: '#2a3347',
+    color: 'white',
+    border: '1px solid #555',
+  }}
+>
+  Restore Backup
+</span>
+</label>
 
 <button
   onClick={onLogout}
