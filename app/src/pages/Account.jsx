@@ -13,12 +13,29 @@ function Account({
   projectCount,
   onLogout,
 }) {
+  if (!currentUser) {
+    return (
+      <div
+        style={{
+          textAlign: 'center',
+          padding: '40px',
+        }}
+      >
+        <h1>Account</h1>
 
-    const avatarLetter =
-  displayName
-    ?.charAt(0)
-    ?.toUpperCase() || 'T'
-    
+        <p>
+          Please log in to view your
+          account.
+        </p>
+      </div>
+    )
+  }
+
+  const avatarLetter =
+    displayName
+      ?.charAt(0)
+      ?.toUpperCase() || 'T'
+
   return (
     <div
       style={{
@@ -38,13 +55,25 @@ function Account({
           textAlign: 'center',
         }}
       >
-        <h1
-          style={{
-            marginBottom: '8px',
-          }}
-        >
-          👤 {displayName}
-        </h1>
+        <div
+  style={{
+    width: '80px',
+    height: '80px',
+    borderRadius: '50%',
+    background: '#6d4aff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '32px',
+    fontWeight: 'bold',
+    color: 'white',
+    margin: '0 auto 20px',
+  }}
+>
+  {avatarLetter}
+</div>
+
+<h1>{displayName}</h1>
 
         <p
           style={{

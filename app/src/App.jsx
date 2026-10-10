@@ -779,9 +779,11 @@ async function handleLogout() {
   try {
     await signOut()
 
-    setCurrentUser(
-      null
-    )
+    setCurrentUser(null)
+
+    setDisplayName('')
+
+    setEditableDisplayName('')
 
     alert('Logged out')
   } catch (error) {
