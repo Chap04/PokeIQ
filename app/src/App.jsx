@@ -288,6 +288,9 @@ const [email, setEmail] =
 const [password, setPassword] =
   useState('')
 
+  const [isLoading, setIsLoading] =
+  useState(true)
+
   const [displayName, setDisplayName] =
   useState('')
   
@@ -567,8 +570,10 @@ if (
             'Loaded collection from cloud'
           )
         }
-      } catch (error) {
+            } catch (error) {
         console.error(error)
+      } finally {
+        setIsLoading(false)
       }
     }
 
@@ -1451,21 +1456,6 @@ async function handleLogout() {
       PROJECT_STATUS.ABANDONED
   ).length
 
-  console.log(
-  'Projects:',
-  projects
-)
-
-console.log(
-  'Project Intelligence:',
-  projectIntelligence
-)
-
-console.log(
-  'Active Project Count:',
-  activeProjectCount
-)
-
     const trainerIntelligence =
     useMemo(() => {
       const warnings = []
@@ -1532,6 +1522,25 @@ console.log(
     displayName
       ?.charAt(0)
       ?.toUpperCase() || 'T'
+
+      if (isLoading) {
+  return (
+    <div
+      style={{
+        padding: '40px',
+        textAlign: 'center',
+      }}
+    >
+      <h2>
+        Loading PokeIQ...
+      </h2>
+
+      <p>
+        Syncing your trainer data.
+      </p>
+    </div>
+  )
+}
 
       
 
