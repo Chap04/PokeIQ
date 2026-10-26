@@ -776,6 +776,10 @@ function RecordingLab({
         'Storage crops:',
         crops
       )
+      console.log(
+        'Detected Regions:',
+        result
+      )
     } catch (error) {
       console.error(
         'Storage crop generation failed:',
@@ -2262,6 +2266,20 @@ function RecordingLab({
                                         <strong>
                                           Name
                                         </strong>
+
+                                        {ocrResult.name.previewUrl && (
+  <img
+    src={ocrResult.name.previewUrl}
+    alt="Name OCR Region"
+    style={{
+      display: 'block',
+      width: '100%',
+      marginBottom: '8px',
+      borderRadius: '8px',
+      background: '#fff',
+    }}
+  />
+)}
 
                                         <span>
                                           Parsed:{' '}

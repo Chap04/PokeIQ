@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import ImportUpload from '../components/ImportUpload'
 
 const methodDetails = {
@@ -41,12 +43,81 @@ const methodDetails = {
   },
 }
 
+const importCategories = [
+  {
+    id: 'general',
+    label: 'General Collection',
+  },
+  {
+    id: '4star',
+    label: '4★ Pokémon',
+  },
+  {
+    id: '3star',
+    label: '3★ Pokémon',
+  },
+  {
+    id: '2star',
+    label: '2★ Pokémon',
+  },
+  {
+    id: '1star',
+    label: '1★ Pokémon',
+  },
+  {
+    id: '0star',
+    label: '0★ Pokémon',
+  },
+]
+
+const traitOptions = [
+  'Shadow',
+  'Shiny',
+  'Lucky',
+]
+
+const availableImportTags = [
+  '4★',
+  '3★',
+  '2★',
+  '1★',
+  '0★',
+  'Shadow',
+  'Shiny',
+  'Lucky',
+]
+
 function ImportMethod({ method, onBack, onContinue }) {
   const details = methodDetails[method]
 
   if (!details) {
     return null
   }
+
+  const [
+  importCategory,
+  setImportCategory,
+] = useState('general')
+
+const [
+  traits,
+  setTraits,
+] = useState([])
+
+function toggleTrait(trait) {
+  setTraits(
+    currentTraits =>
+      currentTraits.includes(trait)
+        ? currentTraits.filter(
+            currentTrait =>
+              currentTrait !== trait
+          )
+        : [
+            ...currentTraits,
+            trait,
+          ]
+  )
+}
 
   return (
     <main className="app">
@@ -94,10 +165,87 @@ function ImportMethod({ method, onBack, onContinue }) {
             </div>
           </div>
 
-          <ImportUpload
-            method={method}
-            onAnalyze={onContinue}
-          />
+          <div className="card">
+            <h2>What are you importing?</h2>
+
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+                marginTop: '15px',
+              }}
+            >
+              {importCategories.map((category) => (
+                <label
+                  key={category.id}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <input
+                    type="radio"
+                    name="import-category"
+                    checked={importCategory === category.id}
+                    onChange={() => setImportCategory(category.id)}
+                  />
+
+                  {category.label}
+                </label>
+              ))}
+            </div>
+
+            <h3
+              style={{
+                marginTop: '20px',
+              }}
+            >
+              Additional Traits
+            </h3>
+
+            <div
+              style={{
+                display: 'flex',
+                gap: '20px',
+                flexWrap: 'wrap',
+                marginTop: '10px',
+              }}
+            >
+              {traitOptions.map((trait) => (
+                <label
+                  key={trait}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <input
+                    type="checkbox"
+                    checked={traits.includes(trait)}
+                    onChange={() => toggleTrait(trait)}
+                  />
+
+                  {trait}
+                </label>
+              ))}
+            </div>
+
+            <ImportUpload
+              method={method}
+              onAnalyze={(payload) =>
+                onContinue({
+                  ...payload,
+                  importCategory,
+                  traits,
+                })
+              }
+            />
+          </div>
         </div>
       </section>
     </main>

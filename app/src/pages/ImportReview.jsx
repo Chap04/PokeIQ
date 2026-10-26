@@ -26,6 +26,12 @@ function ImportReview({
     [importPayload]
   )
 
+  const importCategory =
+  importPayload?.importCategory ?? 'general'
+
+const traits =
+  importPayload?.traits ?? []
+
   const importResult = useMemo(
     () => processImport(detectedPokemon, pokemonCollection),
     [detectedPokemon, pokemonCollection]
@@ -132,11 +138,17 @@ function ImportReview({
   }
 
   function confirmProcessedImport() {
-    onConfirmImport([
+  onConfirmImport(
+    [
       ...autoApproved,
       ...reviewItems,
-    ])
-  }
+    ],
+    {
+      importCategory,
+      traits,
+    }
+  )
+}
 
   const reviewedCount = reviewItems.filter(
     (pokemon) => pokemon.decision !== 'pending'
@@ -201,6 +213,25 @@ function ImportReview({
         )}
 
         <header className="header">
+          <section className="section">
+  <div className="card">
+    <strong>
+      Import Category:
+    </strong>{' '}
+    {importCategory}
+
+    {traits.length > 0 && (
+      <>
+        <br />
+
+        <strong>
+          Traits:
+        </strong>{' '}
+        {traits.join(', ')}
+      </>
+    )}
+  </div>
+</section>
           <p className="eyebrow">PokeIQ Import</p>
           <h1>Import Summary</h1>
 
@@ -423,6 +454,25 @@ function ImportReview({
       </button>
 
       <header className="header">
+        <section className="section">
+  <div className="card">
+    <strong>
+      Import Category:
+    </strong>{' '}
+    {importCategory}
+
+    {traits.length > 0 && (
+      <>
+        <br />
+
+        <strong>
+          Traits:
+        </strong>{' '}
+        {traits.join(', ')}
+      </>
+    )}
+  </div>
+</section>
         <p className="eyebrow">PokeIQ Import</p>
         <h1>Review Required</h1>
 

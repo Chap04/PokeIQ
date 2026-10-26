@@ -1248,10 +1248,10 @@ export async function analyzeStorageCrop(
         image,
         {
           top:
-            0.68,
+            0.70,
 
           bottom:
-            0.98,
+            1.00,
 
           scale:
             5,

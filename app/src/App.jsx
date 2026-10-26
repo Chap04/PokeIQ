@@ -795,6 +795,13 @@ setLastSyncTime(
     ]
   )
 
+  function openFeedbackForm() {
+  window.open(
+    'https://forms.gle/gnXvsCg699bxJyX8A',
+    '_blank'
+  )
+}
+
 async function handleSignUp() {
   try {
     await signUp(
@@ -1410,13 +1417,15 @@ async function handleLogout() {
   }
 
   function confirmImport(
-    reviewItems
-  ) {
+  reviewItems,
+  importMetadata
+) {
     setPokemonCollection(
       currentCollection =>
         applyImportResults(
           currentCollection,
-          reviewItems
+          reviewItems,
+          importMetadata
         )
     )
 
@@ -1769,14 +1778,15 @@ return (
       </nav>
 
       {currentUser ? (
-        <div
-          style={{
-            padding: '10px',
-            display: 'flex',
-            gap: '10px',
-            alignItems: 'center',
-          }}
-        >
+  <div
+    style={{
+      padding: '10px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-end',
+      gap: '8px',
+    }}
+  >
           <button
   onClick={() =>
     openPage('account')
@@ -1812,16 +1822,32 @@ return (
   <span>{displayName}</span>
 </button>
 
+<button
+  onClick={openFeedbackForm}
+  style={{
+    padding: '8px 14px',
+    borderRadius: '999px',
+    border: '1px solid #6d4aff',
+    backgroundColor: '#6d4aff',
+    color: 'white',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  }}
+>
+  🧪 Beta Feedback
+</button>
+
         </div>
       ) : (
-        <div
-          style={{
-            padding: '10px',
-            display: 'flex',
-            gap: '10px',
-            alignItems: 'center',
-          }}
-        >
+  <div
+    style={{
+      padding: '10px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-end',
+      gap: '8px',
+    }}
+  >
           <input
   type="email"
   placeholder="Email"
@@ -1861,6 +1887,21 @@ return (
   style={authButtonStyle}
 >
   Forgot Password
+</button>
+
+<button
+  onClick={openFeedbackForm}
+  style={{
+    padding: '8px 14px',
+    borderRadius: '999px',
+    border: '1px solid #6d4aff',
+    backgroundColor: '#6d4aff',
+    color: 'white',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  }}
+>
+  🧪 Beta Feedback
 </button>
         </div>
       )}

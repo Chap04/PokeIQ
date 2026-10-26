@@ -284,7 +284,7 @@ async function analyzeStorageFrame(
         frame.height,
 
       offsetY:
-        alignment.offsetY,
+        44,
     })
 
   // ------------------------------------------------

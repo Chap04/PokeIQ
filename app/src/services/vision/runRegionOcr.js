@@ -296,6 +296,19 @@ const REGION_SETTINGS = {
         contrast: 1.2,
         threshold: 105,
       },
+      {
+        id: 'light-threshold',
+        scale: 4,
+        contrast: 1.25,
+        threshold: 120,
+      },
+      {
+        id: 'inverted',
+        scale: 4,
+        contrast: 1.35,
+        brightness: 5,
+        invert: true,
+      }
     ],
   },
 }

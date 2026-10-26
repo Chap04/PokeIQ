@@ -1,8 +1,39 @@
 export function applyImportResults(
   currentCollection,
-  reviewItems
+  reviewItems,
+  importMetadata = {}
 ) {
   let updatedCollection = [...currentCollection]
+
+  const importCategory = importMetadata.importCategory ?? 'general'
+  const traits = importMetadata.traits ?? []
+
+  const importedMetadata = {
+  importCategory:
+    importCategory === 'general'
+      ? null
+      : importCategory,
+
+  ...(traits.includes('Shadow')
+  ? { shadow: true }
+  : {}),
+
+...(traits.includes('Shiny')
+  ? { shiny: true }
+  : {}),
+
+...(traits.includes('Lucky')
+  ? { lucky: true }
+  : {}),
+}
+
+if (importCategory === '4star') {
+  importedMetadata.ivs = {
+    attack: 15,
+    defense: 15,
+    stamina: 15,
+  }
+}
 
   reviewItems.forEach((pokemon) => {
     switch (pokemon.decision) {
@@ -15,9 +46,12 @@ export function applyImportResults(
         } = pokemon
 
         updatedCollection.push({
-          id: crypto.randomUUID(),
-          ...pokemonData,
-        })
+  id: crypto.randomUUID(),
+
+  ...pokemonData,
+
+  ...importedMetadata,
+})
 
         break
       }
@@ -44,10 +78,14 @@ export function applyImportResults(
             } = pokemon
 
             return {
-              ...existingPokemon,
-              ...pokemonData,
-              id: existingPokemon.id,
-            }
+  ...existingPokemon,
+
+  ...pokemonData,
+
+  ...importedMetadata,
+
+  id: existingPokemon.id,
+}
           }
         )
 

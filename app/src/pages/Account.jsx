@@ -480,13 +480,24 @@ const actionButtonStyle = {
 
 <button
   onClick={() =>
-    window.location.href =
-      'mailto:carterchapmanepicgames@yahoo.com?subject=PokeIQ Beta Feedback'
+    window.open(
+      'https://forms.gle/6a5RqqJjKPAhnK986',
+      '_blank'
+    )
   }
   style={actionButtonStyle}
 >
-  Send Feedback
+  Submit Feedback
 </button>
+<p
+  style={{
+    color: '#a0aec0',
+    fontSize: '14px',
+  }}
+>
+  Found a bug or have a suggestion?
+  Please submit feedback to help improve PokeIQ.
+</p>
 
 <button
   onClick={onLogout}

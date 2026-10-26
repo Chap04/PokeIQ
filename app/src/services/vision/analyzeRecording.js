@@ -2969,7 +2969,7 @@ export async function analyzeRecording(
               frame.height,
 
             offsetY:
-              alignment.offsetY,
+              44,
           })
 
         const regions =
@@ -3663,8 +3663,21 @@ export async function analyzeRecording(
 
       const attempts =
         selectOcrAppearances(
-          position.appearances
+          position.appearances,
+          
         )
+
+        attempts.forEach(
+  (appearance, index) => {
+    console.log(
+      `[V7T DEBUG] ${position.absolutePosition} | ` +
+      `attempt ${index + 1} | ` +
+      `F${appearance.frameIndex + 1} | ` +
+      `q=${appearance.qualityScore.toFixed(1)} | ` +
+      `center=${appearance.centerY?.toFixed(1)}`
+    )
+  }
+)
 
         console.log(
   `[V7T SELECT] ${position.absolutePosition} | ` +
@@ -3770,14 +3783,54 @@ export async function analyzeRecording(
           performanceTotals.cropMs +=
             cropMs
 
+          console.log('DEBUG HIT', position.absolutePosition)
+
+
           const crop =
             crops[0]
+
+            if (position.absolutePosition === '6:0') {
+  debugger;
+}
+            if (
+  [
+    '4:1',
+    '6:0',
+    '7:0',
+    '8:0',
+    '9:0'
+  ].includes(position.absolutePosition)
+) {
+  console.log(
+    `[DEBUG CROP URL] ${position.absolutePosition}`,
+    crop
+  )
+}
 
           if (!crop) {
             throw new Error(
               'The selected storage appearance could not be cropped.'
             )
           }
+
+          if (
+  [
+    '4:1',
+    '4:2',
+    '5:1',
+    '5:2',
+    '6:0',
+    '6:1',
+    '6:2'
+  ].includes(position.absolutePosition)
+) {
+  console.log(
+    `[DEBUG CROP] ${position.absolutePosition} | ` +
+    `F${appearance.frameIndex + 1} | ` +
+    `q=${appearance.qualityScore.toFixed(1)} | ` +
+    `${crop.previewUrl}`
+  )
+}
 
           // ------------------------------------------
           // V7S species reuse state before analysis

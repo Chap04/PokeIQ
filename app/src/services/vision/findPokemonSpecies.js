@@ -80,6 +80,7 @@ export function findPokemonSpecies(candidateText) {
       (candidateA, candidateB) =>
         candidateB.confidence - candidateA.confidence
     )
+    
 
   const bestMatch = rankedSpecies[0]
 
