@@ -1372,6 +1372,17 @@ function selectOcrAppearances(
         )
       )
 
+      console.log(
+  '[BUCKET]',
+  bucketIndex,
+  bucket.map((entry) => ({
+    frame: entry.appearance.frameIndex + 1,
+    q: entry.qualityScore,
+    center: entry.appearance.centerY,
+    clearance: entry.clearance,
+  }))
+)
+
     const winner =
       [...bucket].sort(
         (
@@ -1405,11 +1416,19 @@ function selectOcrAppearances(
         }
       )[0]
 
+      
+
     if (winner) {
-      selected.push(
-        winner
-      )
-    }
+  console.log('[WINNER]', {
+    bucketIndex,
+    quality: winner.qualityScore,
+    clearance: winner.clearance,
+    frame: winner.appearance.frameIndex + 1,
+    center: winner.appearance.centerY,
+  })
+
+  selected.push(winner)
+}
   }
 
   return selected.map(
@@ -3661,6 +3680,27 @@ export async function analyzeRecording(
       const position =
         positions[positionIndex]
 
+        if (
+  ['13:0', '13:1', '13:2'].includes(
+    position.absolutePosition
+  )
+) {
+  console.log(
+    '[ALL APPEARANCES]',
+    position.absolutePosition,
+    position.appearances.map(
+      (appearance) => ({
+        frame:
+          appearance.frameIndex + 1,
+        center:
+          appearance.centerY,
+        quality:
+          appearance.qualityScore,
+      })
+    )
+  )
+}
+
       const attempts =
         selectOcrAppearances(
           position.appearances,
@@ -3695,7 +3735,7 @@ export async function analyzeRecording(
           `F${appearance.frameIndex + 1}` +
           `(q=${appearance.qualityScore.toFixed(
             1
-          )})`
+          )}, center=${appearance.centerY?.toFixed?.(1)})`
       )
       .join(', ')
   }`
@@ -3789,16 +3829,14 @@ export async function analyzeRecording(
           const crop =
             crops[0]
 
-            if (position.absolutePosition === '6:0') {
-  debugger;
-}
+            //if (position.absolutePosition === '6:0') {
+  //debugger;
+//}
             if (
   [
-    '4:1',
-    '6:0',
-    '7:0',
-    '8:0',
-    '9:0'
+    '13:0',
+    '13:1',
+    '13:2'
   ].includes(position.absolutePosition)
 ) {
   console.log(
@@ -3815,13 +3853,9 @@ export async function analyzeRecording(
 
           if (
   [
-    '4:1',
-    '4:2',
-    '5:1',
-    '5:2',
-    '6:0',
-    '6:1',
-    '6:2'
+    '13:0',
+    '13:1',
+    '13:2'
   ].includes(position.absolutePosition)
 ) {
   console.log(
