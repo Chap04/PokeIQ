@@ -3097,6 +3097,17 @@ export async function analyzeRecording(
               return
             }
 
+            console.log(
+  '[REGION]',
+  frameIndex + 1,
+  {
+    regionY,
+    regionHeight: region.height,
+    x: region.x,
+    y: region.y,
+  }
+)
+
             const quality =
               calculateAppearanceQuality({
                 frame,
@@ -3686,19 +3697,22 @@ export async function analyzeRecording(
   )
 ) {
   console.log(
-    '[ALL APPEARANCES]',
-    position.absolutePosition,
+  JSON.stringify(
     position.appearances.map(
       (appearance) => ({
-        frame:
-          appearance.frameIndex + 1,
-        center:
-          appearance.centerY,
-        quality:
-          appearance.qualityScore,
+        frame: appearance.frameIndex + 1,
+        regionY: appearance.regionY,
+        centerY: appearance.centerY,
+        quality: appearance.qualityScore,
+        listSpaceY: appearance.listSpaceY,
+        absoluteRowFloat:
+          appearance.absoluteRowFloat,
       })
-    )
+    ),
+    null,
+    2
   )
+)
 }
 
       const attempts =
